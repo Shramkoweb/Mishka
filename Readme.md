@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergey Shramko](https://up.htmlacademy.ru/adaptive/15/user/852139).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Бухвалова](https://up.htmlacademy.ru/adaptive/15/user/114660).
 
 ---
 
