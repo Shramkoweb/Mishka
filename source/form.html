@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Мишка - форма</title>
+  </head>
+
+  <body class="page">
+    <!-- Шапка сайта и раздел навигации -->
+    <header class="page-header">
+      <!-- Логотип -->
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип сайта Мишка">
+      </a>
+
+      <!-- Навигация по сайту -->
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Каталог товаров</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
+
+        <a class="main-nav__search" href="#">Поиск по сайту</a>
+
+        <a class="main-nav__cart" href="#">Корзина</a>
+      </nav>
+
+      <!-- Заголовок страницы -->
+      <div class="page-header__title-wrapper">
+        <h1 class="page-header__title">Вязание на заказ</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Блок формы -->
+      <section class="knitting">
+        <p class="knitting__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+          и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+        <!-- Форма -->
+        <form class="knitting__form form" action="https://echo.htmlacademy.ru" method="GET">
+          <!-- Блок выбора типа изделия -->
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-legend">Тип</legend>
+
+            <label class="form__label">
+              <input class="form__input form__input-radio" type="radio" name="type" value="accessory">
+              Аксессуар для интерьера
+            </label>
+
+            <label class="form__label">
+              <input class="form__input form__input-radio" type="radio" name="type" value="toy">
+              Детская игрушка
+            </label>
+          </fieldset>
+
+          <!-- Блок выбора цвета -->
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-legend">Цвет</legend>
+
+            <label class="form__label">
+              <input class="form__input form__input-checkbox" type="checkbox" name="white">
+              Белый
+            </label>
+
+            <label class="form__label">
+              <input class="form__input form__input-checkbox" type="checkbox" name="grey">
+              Серый
+            </label>
+
+            <label class="form__label">
+              <input class="form__input form__input-checkbox" type="checkbox" name="tiffany ">
+              «Тиффани»
+            </label>
+
+            <label class="form__label">
+              <input class="form__input form__input-checkbox" type="checkbox" name="black">
+              Черный
+            </label>
+
+            <label class="form__label">
+              <input class="form__input form__input-checkbox" type="checkbox" name="pink">
+              Розовый
+            </label>
+
+            <label class="form__label">
+              <input class="form__input form__input-checkbox" type="checkbox" name="orange">
+              Оранжевый
+            </label>
+          </fieldset>
+
+          <!-- Блок ФИО -->
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-legend">ФИО</legend>
+
+            <label class="form__label">Имя:
+              <input class="form__input form__input-name" type="text" name="user-name" placeholder="Введите ваше имя*">
+            </label>
+
+            <label class="form__label">Фамилия:
+              <input class="form__input form__input-surname" type="text" name="user-surname" placeholder="Укажите фамилию*">
+            </label>
+
+            <label class="form__label">Отчество:
+              <input class="form__input form__input-patronymic" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
+            </label>
+          </fieldset>
+
+          <!-- Блок телефон -->
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-legend">Тел</legend>
+
+            <label class="form__label">
+              <input class="form__input form__input-number" type="text" name="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            </label>
+          </fieldset>
+
+          <!-- Блок почты -->
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-legend">E-mail</legend>
+
+            <label class="form__label">
+              <input class="form__input form__input-mail" type="text" name="user-mail" placeholder="Ваш Email*">
+            </label>
+          </fieldset>
+
+          <!-- Блок дополнительной информации -->
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-legend">Доп</legend>
+
+            <label class="form__label">
+              <textarea class="form__textarea" name="more" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </label>
+          </fieldset>
+
+          <span class="form__mark">*Поля обязательны для заполнения</span>
+
+          <button class="form__button button">Отправить заказ</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="page-footer">
+      <!-- Социальные кнопки -->
+      <ul class="page-footer__list socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">Instagram</a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link" href="#">Facebook</a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link" href="#">Twitter</a>
+        </li>
+      </ul>
+
+      <!-- Copyright -->
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
