@@ -47,102 +47,101 @@
         <!-- Форма -->
         <form class="knitting__form form" action="https://echo.htmlacademy.ru" method="GET">
           <!-- Блок выбора типа изделия -->
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-legend">Тип</legend>
+          <fieldset class="form-group">
+            <legend class="form-group__title">Тип</legend>
 
-            <label class="form__label">
-              <input class="form__input form__input-radio" type="radio" name="type" value="accessory">
+            <label class="form-group__label">
+              <input class="form-group__input form-group__input-radio" type="radio" name="type" value="accessory">
               Аксессуар для интерьера
             </label>
 
-            <label class="form__label">
-              <input class="form__input form__input-radio" type="radio" name="type" value="toy">
+            <label class="form-group__label">
+              <input class="form-group__input form-group__input-radio" type="radio" name="type" value="toy">
               Детская игрушка
             </label>
           </fieldset>
 
           <!-- Блок выбора цвета -->
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-legend">Цвет</legend>
+          <fieldset class="form-group">
+            <legend class="form-group__title">Цвет</legend>
 
-            <label class="form__label">
-              <input class="form__input form__input-checkbox" type="checkbox" name="white">
+            <label class="form-group__label">
+              <input class="form-group__input form-group__input-checkbox" type="checkbox" name="color" value="white">
               Белый
             </label>
 
-            <label class="form__label">
-              <input class="form__input form__input-checkbox" type="checkbox" name="grey">
+            <label class="form-group__label">
+              <input class="form-group__input form-group__input-checkbox" type="checkbox" name="color" value="grey">
               Серый
             </label>
 
-            <label class="form__label">
-              <input class="form__input form__input-checkbox" type="checkbox" name="tiffany ">
+            <label class="form-group__label">
+              <input class="form-group__input form-group__input-checkbox" type="checkbox" name="color" value="tiffany">
               «Тиффани»
             </label>
 
-            <label class="form__label">
-              <input class="form__input form__input-checkbox" type="checkbox" name="black">
+            <label class="form-group__label">
+              <input class="form-group__input form-group__input-checkbox" type="checkbox" name="color" value="black">
               Черный
             </label>
 
-            <label class="form__label">
-              <input class="form__input form__input-checkbox" type="checkbox" name="pink">
+            <label class="form-group__label">
+              <input class="form-group__input form-group__input-checkbox" type="checkbox" name="color" value="pink">
               Розовый
             </label>
 
-            <label class="form__label">
-              <input class="form__input form__input-checkbox" type="checkbox" name="orange">
+            <label class="form-group__label">
+              <input class="form-group__input form-group__input-checkbox" type="checkbox" name="color" value="orange">
               Оранжевый
             </label>
           </fieldset>
 
           <!-- Блок ФИО -->
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-legend">ФИО</legend>
+          <fieldset class="form-group">
+            <legend class="form-group__title">ФИО</legend>
 
-            <label class="form__label">Имя:
-              <input class="form__input form__input-name" type="text" name="user-name" placeholder="Введите ваше имя*">
+            <label class="form-group__label">Имя:
+              <input class="form-group__input form-group__input-name" type="text" name="user-name" placeholder="Введите ваше имя*"
+                required>
             </label>
 
-            <label class="form__label">Фамилия:
-              <input class="form__input form__input-surname" type="text" name="user-surname" placeholder="Укажите фамилию*">
+            <label class="form-group__label">Фамилия:
+              <input class="form-group__input form-group__input-surname" type="text" name="user-surname" placeholder="Укажите фамилию*"
+                required>
             </label>
 
-            <label class="form__label">Отчество:
-              <input class="form__input form__input-patronymic" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
+            <label class="form-group__label">Отчество:
+              <input class="form-group__input form-group__input-patronymic" type="text" name="user-patronymic"
+                placeholder="Отчество, если желаете" required>
             </label>
           </fieldset>
 
           <!-- Блок телефон -->
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-legend">Тел</legend>
-
-            <label class="form__label">
-              <input class="form__input form__input-number" type="text" name="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <div class="form-group">
+            <label class="form-group__title">Тел
+              <input class="form-group__input form-group__input-number" type="tel" name="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                required>
             </label>
-          </fieldset>
+          </div>
 
           <!-- Блок почты -->
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-legend">E-mail</legend>
-
-            <label class="form__label">
-              <input class="form__input form__input-mail" type="text" name="user-mail" placeholder="Ваш Email*">
+          <div class="form-group">
+            <label class="form-group__title">E-mail
+              <input class="form-group__input form-group__input-mail" type="email" name="user-mail" placeholder="Ваш Email*"
+                required>
             </label>
-          </fieldset>
+          </div>
 
           <!-- Блок дополнительной информации -->
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-legend">Доп</legend>
-
-            <label class="form__label">
-              <textarea class="form__textarea" name="more" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="form-group">
+            <label class="form-group__title">Доп
+              <textarea class="form-group__textarea" name="more" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
-          </fieldset>
+          </div>
 
           <span class="form__mark">*Поля обязательны для заполнения</span>
 
-          <button class="form__button button">Отправить заказ</button>
+          <button class="form__submit button">Отправить заказ</button>
         </form>
       </section>
     </main>
