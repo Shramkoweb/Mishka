@@ -130,7 +130,11 @@
               фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
 
-            <cite class="reviews__author-name">Анастасия Красильникова <span class="reviews__author-nick">@misssssiskras</span></cite>
+            <cite class="reviews__author">
+              <span class="reviews__author-name">Анастасия Красильникова</span>
+
+              <span class="reviews__author-nick">@misssssiskras</span>
+            </cite>
           </blockquote>
         </div>
 
@@ -168,26 +172,37 @@
       </section>
 
       <!-- Модальное окно -->
-      <section class="modal modal-cart">
+      <section class="modal-cart modal">
         <h2 class="modal__title">Добавить в корзину</h2>
 
-        <p class="modal__text">Выберите размер</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru">
+          <fieldset class="modal__form-group">
+            <legend class="modal__legend">Выберите размер</legend>
 
-        <ul class="modal_list">
-          <li class="modal__item">
-            S
-          </li>
+            <label class="modal__label">
+              S
 
-          <li class="modal__item">
-            M
-          </li>
+              <input class="modal__input" type="radio" name="size" value="S">
+            </label>
 
-          <li class="modal__item">
-            L
-          </li>
-        </ul>
 
-        <button class="modal__button button" type="button">Добавить</button>
+            <label class="modal__label">
+              M
+
+              <input class="modal__input" type="radio" name="size" value="M">
+            </label>
+
+
+            <label class="modal__label">
+              L
+
+              <input class="modal__input" type="radio" name="size" value="L">
+            </label>
+
+          </fieldset>
+
+          <button class="modal__submit button">Добавить</button>
+        </form>
       </section>
     </main>
 
