@@ -1,0 +1,23 @@
+.categories {
+  font-size: 19px;
+  line-height: 24px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__link {
+    color: #ffffff;
+
+    background-color: #63d1bb;
+  }
+
+  &__link--darker {
+    background-color: #56c3b2;
+  }
+
+
+}
