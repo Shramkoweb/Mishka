@@ -1,0 +1,11 @@
+.main-nav {
+  line-height: 24px;
+  text-align: left;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+}
