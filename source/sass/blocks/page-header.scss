@@ -1,0 +1,26 @@
+.page-header {
+  background-color: #ffffff;
+
+  &__logo {
+    display: block;
+    width: 86px;
+    height: 35px;
+  }
+
+  &__title-wrapper {
+    padding-top: 76px;
+    padding-bottom: 120px;
+
+    background-color: #fafafa;
+    background-image: url("../../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title {
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    color: #010000;
+  }
+}
