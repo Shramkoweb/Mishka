@@ -1,21 +1,18 @@
 .categories {
   font-size: 19px;
   line-height: 24px;
+}
 
-  &__list {
-    margin: 0;
-    padding: 0;
+.categories__list {
+  @include list-reset;
+}
 
-    list-style: none;
-  }
+.categories__link {
+  color: #ffffff;
 
-  &__link {
-    color: #ffffff;
+  background-color: #63d1bb;
 
-    background-color: #63d1bb;
-  }
-
-  &__link--darker {
+  &--darker {
     background-color: #56c3b2;
   }
 }

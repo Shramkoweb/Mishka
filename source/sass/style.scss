@@ -1,6 +1,13 @@
+/* Подключение normalize */
 @import "normalize.scss";
+/* Подключение шрифтов и миксин*/
 @import "fonts.scss";
-@import "blocks/base.scss";
+@import "mixins.scss";
+/* Базовая стилизация */
+@import "base.scss";
+/* Стилизация хедера*/
 @import "blocks/page-header.scss";
+/* Стилизация основной навигации*/
 @import "blocks/main-nav.scss";
+/* Стилизация раздела категорий*/
 @import "blocks/categories.scss";
