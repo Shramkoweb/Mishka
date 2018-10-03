@@ -1,32 +1,34 @@
 /* Подключение normalize */
 @import "normalize.scss";
-/* Подключение шрифтов и миксин*/
+/* Подключение шрифтов и миксин */
 @import "fonts.scss";
 @import "mixins.scss";
 /* Базовая стилизация */
 @import "base.scss";
-/* Стилизация хедера*/
+/* Хедер */
 @import "blocks/page-header.scss";
-/* Стилизация основной навигации*/
+/* Основная навигация */
 @import "blocks/main-nav.scss";
-/* Стилизация раздела категорий*/
+/* Раздел категорий */
 @import "blocks/categories.scss";
-/* Стилизация раздела товара недели*/
+/* Товар недели */
 @import "blocks/special.scss";
-/* Стилизация таблицы раздела товара недели*/
+/* Таблица товара недели*/
 @import "blocks/special-table.scss";
-/* Стилизация раздела преимуществ*/
+/* Преимущества */
 @import "blocks/features.scss";
-/* Стилизация списка раздела преимуществ*/
+/* Список преимуществ */
 @import "blocks/features-list.scss";
-/* Стилизация раздела отзывов*/
+/* Отзывы */
 @import "blocks/reviews.scss";
-/* Стилизация раздела контактов*/
+/* Контакты */
 @import "blocks/contacts.scss";
 @import "blocks/contacts-table.scss";
-/* Стилизация модального окна*/
+/* Модельное коно */
 @import "blocks/modal.scss";
-/* Стилизация футера*/
+/* Футер */
 @import "blocks/page-footer.scss";
 @import "blocks/socials.scss";
 @import "blocks/copyright.scss";
+/* Каталог */
+@import "blocks/catalog.scss";
