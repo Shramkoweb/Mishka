@@ -1,5 +1,18 @@
 .special-table {
+  border-collapse: collapse;
   font-weight: normal;
   font-size: 15px;
   color: #444444;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-table__row {
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  justify-content: flex-start;
+}
+
+.special-table__cell {
+  width: 40%;
 }

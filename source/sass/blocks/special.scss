@@ -1,10 +1,14 @@
 .special {
   padding: 0 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .special__title {
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
 }
 
 .special__tag {
