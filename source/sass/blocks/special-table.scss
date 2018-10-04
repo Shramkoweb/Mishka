@@ -1,19 +1,24 @@
 .special-table {
+  margin-bottom: 30px;
+
   border-collapse: collapse;
   font-weight: normal;
   font-size: 15px;
   color: #444444;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
 }
 
 .special-table__row {
   display: flex;
-  border-bottom: 1px solid #f1f1f1;
   justify-content: flex-start;
+  padding: 10px 0;
+
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .special-table__cell {
-  width: 40%;
+  padding: 0;
+}
+
+.special-table__cell-name {
+  width: 38%;
 }
