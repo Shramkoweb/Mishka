@@ -1,41 +1,11 @@
-/* Подключение normalize */
 @import "normalize.scss";
-/* Подключение шрифтов и миксин */
+/* Подключение шрифтов, миксин  и переменных*/
 @import "fonts.scss";
 @import "mixins.scss";
 /* Базовая стилизация */
 @import "base.scss";
-@import "blocks/button.scss";
+@import "visually-hidden.scss";
 /* Хедер */
 @import "blocks/page-header.scss";
 /* Основная навигация */
 @import "blocks/main-nav.scss";
-/* Раздел категорий */
-@import "blocks/categories.scss";
-/* Товар недели */
-@import "blocks/special.scss";
-/* Таблица товара недели*/
-@import "blocks/special-table.scss";
-/* Преимущества */
-@import "blocks/features.scss";
-/* Список преимуществ */
-@import "blocks/features-list.scss";
-/* Отзывы */
-@import "blocks/reviews.scss";
-/* Контакты */
-@import "blocks/contacts.scss";
-@import "blocks/contacts-table.scss";
-/* Модельное коно */
-@import "blocks/modal.scss";
-/* Футер */
-@import "blocks/page-footer.scss";
-@import "blocks/socials.scss";
-@import "blocks/copyright.scss";
-/* Каталог */
-@import "blocks/catalog.scss";
-/* Производство */
-@import "blocks/manufacturing.scss";
-/* Вязание на заказ */
-@import "blocks/knitting.scss";
-/* Вязание на заказ */
-@import "blocks/form.scss";

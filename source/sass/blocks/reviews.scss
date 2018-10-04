@@ -1,5 +1,7 @@
 .reviews {
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__quotation {
