@@ -1,7 +1,11 @@
 .page-footer {
-  padding: 0 30px;
-
-  background-color: #fafafa;
   display: flex;
   flex-direction: column;
+
+  background-color: #fafafa;
+}
+
+.page-footer__inner-wrapper {
+  width: 320px;
+  margin: 0 auto;
 }

@@ -1,7 +1,9 @@
 .modal {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 30px;
+  width: 320px;
+  margin: 0 auto;
 
   border: 1px solid #c6c6c6;
 }
