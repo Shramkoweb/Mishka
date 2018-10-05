@@ -4,6 +4,13 @@
   background-color: #ffffff;
 }
 
+.page-header__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-header__logo-wrapper {
   display: flex;
   justify-content: center;
@@ -24,6 +31,10 @@
     background-image: url("../../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -15px;
+  }
+
+  &--catalog {
+    padding-bottom: 77px;
   }
 }
 

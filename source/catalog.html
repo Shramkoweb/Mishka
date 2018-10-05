@@ -11,88 +11,102 @@
   <body class="page">
     <!-- Шапка сайта и раздел навигации -->
     <header class="page-header">
-      <!-- Логотип -->
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
-      </a>
+      <div class="page-header__inner-wrapper">
+        <!-- Логотип -->
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+          </a>
+        </div>
 
-      <!-- Навигация по сайту -->
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <!-- Навигация по сайту -->
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+            </li>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Каталог товаров</a>
-          </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+            </li>
+          </ul>
 
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
-          </li>
-        </ul>
+          <a class="main-nav__search main-nav__link" href="#">Поиск по сайту</a>
 
-        <a class="main-nav__search" href="#">Поиск по сайту</a>
+          <a class="main-nav__cart main-nav__link" href="#">Корзина</a>
 
-        <a class="main-nav__cart" href="#">Корзина</a>
-      </nav>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span><img src="img/menu.png" alt=""></span>
+          </button>
+        </nav>
 
-      <!-- Заголовок страницы -->
-      <div class="page-header__title-wrapper">
-        <h1 class="page-header__title">Каталог товаров</h1>
+        <!-- Заголовок страницы -->
+        <div class="page-header__title-wrapper page-header__title-wrapper--catalog">
+          <h1 class="page-header__title">Каталог товаров</h1>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- Каталог сайта -->
       <section class="catalog">
-        <ul class="catalog__list">
-          <li class="catalog__item catalog-item">
-            <a class="catalog-item__link catalog-item__link--image" href="#">
-              <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
-            </a>
-
-            <h3 class="catalog-item__title">
-              <a class="catalog-item__link" href="#">
-                Зайчик-попрыгайчик
+        <div class="catalog__inner-wrapper">
+          <ul class="catalog__list">
+            <li class="catalog__item catalog-item">
+              <a class="catalog-item__link catalog-item__link--image" href="#">
+                <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
               </a>
-            </h3>
 
-            <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+              <div class="catalog-item__info-warpper">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Зайчик-попрыгайчик
+                  </a>
+                </h3>
 
-            <span class="catalog-item__price">1 200 руб.</span>
-          </li>
+                <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
 
-          <li class="catalog__item catalog-item">
-            <a class="catalog-item__link catalog-item__link--image" href="#">
-              <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
-            </a>
+                <span class="catalog-item__price">1 200 руб.</span>
+              </div>
+            </li>
 
-            <h3 class="catalog-item__title">
-              <a class="catalog-item__link" href="#">
-                Корзинка для белья
+            <li class="catalog__item catalog-item">
+              <a class="catalog-item__link catalog-item__link--image" href="#">
+                <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
               </a>
-            </h3>
 
-            <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+              <div class="catalog-item__info-warpper">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Корзинка для белья
+                  </a>
+                </h3>
 
-            <span class="catalog-item__price">690 руб.</span>
-          </li>
+                <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
 
-          <li class="catalog__item catalog-item">
-            <a class="catalog-item__link catalog-item__link--image" href="#">
-              <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
-            </a>
+                <span class="catalog-item__price">690 руб.</span>
+              </div>
+            </li>
 
-            <h3 class="catalog-item__title">
-              <a class="catalog-item__link" href="#">
-                Большая корзинка для игрушек
+            <li class="catalog__item catalog-item">
+              <a class="catalog-item__link catalog-item__link--image" href="#">
+                <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
               </a>
-            </h3>
+              <div class="catalog-item__info-warpper">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Большая корзинка для игрушек
+                  </a>
+                </h3>
 
-            <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+                <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
 
-            <span class="catalog-item__price">1 500 руб.</span>
-          </li>
-        </ul>
+                <span class="catalog-item__price">1 500 руб.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Процесс производства -->
