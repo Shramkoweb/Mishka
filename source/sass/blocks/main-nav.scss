@@ -1,0 +1,38 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 24px;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 27px 30px;
+
+  text-align: center;
+}
+
+.main-nav__search,
+.main-nav__cart {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  top: 5%;
+  right: 10%;
+}

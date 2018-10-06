@@ -1,0 +1,46 @@
+.special {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  padding-top: 28px;
+}
+
+.special__title {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.special__tag {
+  margin-top: 5px;
+
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.special__description {
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 15px;
+
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.special__price {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+}
+
+.special__image {
+  width: 260px;
+  height: 315px;
+}

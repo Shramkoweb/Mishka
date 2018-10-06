@@ -1,0 +1,42 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 320px;
+  margin: 0 auto;
+
+  border: 1px solid #c6c6c6;
+}
+
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__legend {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+}
+
+.modal__label {
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}
+
+.modal__form-group {
+  margin-bottom: 30px;
+  border: none;
+}
+
+.modal__submit {
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  background-color: #63d1bb;
+}

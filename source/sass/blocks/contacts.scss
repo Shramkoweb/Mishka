@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__info-wrapper {
+  margin-bottom: 8px;
+  padding: 0 30px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__map-wrapper {
+  margin-bottom: 42px;
+}
+
+.contacts__button {
+  align-self: center;
+  width: 81%;
+  margin-bottom: 40px;
+}
