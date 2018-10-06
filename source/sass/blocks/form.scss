@@ -29,6 +29,8 @@
 }
 
 .form__mark {
+  margin-top: 23px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -49,9 +51,9 @@
   }
 
   &--number {
-    margin-top: 33px;
     display: flex;
     flex-direction: column;
+    margin-top: 33px;
   }
 }
 
@@ -194,10 +196,6 @@
     border-bottom: 2px solid #000000;
     border-left: none;
   }
-}
-
-.form__mark {
-  margin-top: 23px;
 }
 
 .form__submit {

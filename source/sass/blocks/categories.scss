@@ -11,10 +11,12 @@
   display: block;
   padding: 28px 30px;
   padding-right: 150px;
+
   text-align: left;
-
   color: #ffffff;
+}
 
+.categories__item {
   background-color: #63d1bb;
 
   &--darker {

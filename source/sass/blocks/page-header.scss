@@ -4,18 +4,11 @@
   background-color: #ffffff;
 }
 
-.page-header__inner-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 320px;
+.page-header__logo {
+  display: block;
+  width: 87px;
   margin: 0 auto;
-}
-
-.page-header__logo-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 22px 30px;
+  padding-top: 22px;
 
   border-bottom: 1px solid #ececec;
 }

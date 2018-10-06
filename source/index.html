@@ -11,39 +11,39 @@
   <body class="page">
     <!-- Шапка сайта и раздел навигации -->
     <header class="page-header">
-      <!-- Логотип -->
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
-        </a>
-      </div>
+        <!-- Логотип -->
+        <div class="container">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+          </a>
+        </div>
 
-      <!-- Навигация по сайту -->
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
-          </li>
+        <!-- Навигация по сайту -->
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+            </li>
 
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
-          </li>
-        </ul>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+            </li>
+          </ul>
 
-        <a class="main-nav__search main-nav__link" href="#">Поиск по сайту</a>
+          <a class="main-nav__search main-nav__link" href="#">Поиск по сайту</a>
 
-        <a class="main-nav__cart main-nav__link" href="#">Корзина</a>
+          <a class="main-nav__cart main-nav__link" href="#">Корзина</a>
 
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <span><img src="img/menu.png" alt=""></span>
-        </button>
-      </nav>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span><img src="img/menu.png" alt=""></span>
+          </button>
+        </nav>
 
-      <!-- Заголовок страницы -->
-      <div class="page-header__title-wrapper page-header__title-wrapper--index">
-        <h1 class="page-header__title">Милые штуки ручной работы&nbsp;для дома</h1>
-      </div>
+        <!-- Заголовок страницы -->
+        <div class="page-header__title-wrapper page-header__title-wrapper--index">
+          <h1 class="page-header__title">Милые штуки ручной работы&nbsp;для дома</h1>
+        </div>
     </header>
 
     <main>
@@ -51,15 +51,18 @@
       <section class="categories">
         <ul class="categories__list">
           <li class="categories__item">
-            <a class="categories__link" href="#">Предметы интерьера</a>
+            <div class="container">
+              <a class="categories__link" href="#">Предметы интерьера</a>
+            </div>
           </li>
 
-          <li class="categories__item">
-            <a class="categories__link categories__link--darker" href="#">Детские игрушки</a>
+          <li class="categories__item categories__item--darker">
+            <div class="container">
+              <a class="categories__link" href="#">Детские игрушки</a>
+            </div>
           </li>
         </ul>
       </section>
-
       <!-- Блок товара недели -->
       <section class="special">
         <h2 class="special__title">Вязаные корзинки</h2>
