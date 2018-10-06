@@ -1,5 +1,7 @@
 .form {
   line-height: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group__title {
