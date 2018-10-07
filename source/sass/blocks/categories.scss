@@ -5,18 +5,30 @@
 
 .categories__list {
   @include list-reset;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
 }
 
 .categories__link {
   position: relative;
 
   display: block;
-  padding-top: 28px;
-  padding-right: 120px;
-  padding-bottom: 28px;
+  padding: 27px 120px 29px 30px;
 
   text-align: left;
   color: #ffffff;
+
+  &--toy {
+    background-color: #56c3b2;
+  }
+
+  &--interior {
+    background-color: #63d1bb;
+  }
 
   &::after {
     content: "";
@@ -27,7 +39,7 @@
 
   &--interior::after {
     top: 24px;
-    right: 6px;
+    right: 36px;
 
     width: 40px;
     height: 62px;
@@ -37,19 +49,11 @@
 
   &--toy::after {
     top: 22px;
-    right: 0;
+    right: 28px;
 
     width: 60px;
     height: 60px;
 
     background-image: url("../img/icon-toy.svg");
-  }
-}
-
-.categories__item {
-  background-color: #63d1bb;
-
-  &--darker {
-    background-color: #56c3b2;
   }
 }
