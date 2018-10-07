@@ -1,10 +1,9 @@
 .features-list {
+  @include list-reset;
   position: relative;
 
   display: flex;
   flex-direction: column;
-
-  @include list-reset;
 }
 
 .features-list__item {
