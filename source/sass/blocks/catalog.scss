@@ -9,10 +9,10 @@
 }
 
 .catalog__list {
+  @include list-reset;
   display: flex;
   flex-direction: column;
-
-  @include list-reset;
+  margin-top: 30px;
 }
 
 .catalog-item__title {

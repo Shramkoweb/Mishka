@@ -31,13 +31,21 @@
             </li>
           </ul>
 
-          <a class="main-nav__search main-nav__link" href="#">Поиск по сайту</a>
+          <div class="main-nav__user-nav">
+            <a class="main-nav__search main-nav__link" href="#">
+              Поиск по сайту
+              <img class="main-nav__search-icon" src="img/icon-search.svg" alt="Поиск по сайту">
+            </a>
 
-          <a class="main-nav__cart main-nav__link" href="#">Корзина</a>
+            <a class="main-nav__cart main-nav__link" href="#">
+              Корзина: пока пуста
+              <img class="main-nav__cart-icon" src="img/icon-cart.svg" alt="Поиск по сайту">
+            </a>
+          </div>
 
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <span><img src="img/menu.png" alt=""></span>
+            <span><img src="img/menu.png" alt="Открыть меню"></span>
           </button>
         </nav>
 
@@ -51,7 +59,7 @@
     <main>
       <!-- Каталог сайта -->
       <section class="catalog">
-        <div class="catalog__inner">
+        <div class="container">
           <ul class="catalog__list">
             <li class="catalog__item catalog-item">
               <a class="catalog-item__link catalog-item__link--image" href="#">
@@ -111,7 +119,7 @@
 
       <!-- Процесс производства -->
       <section class="manufacturing">
-        <div class="manufacturing__inner">
+        <div class="container">
           <div class="manufacturing__title-wrapper">
             <h2 class="manufacturing__title">Процесс производства</h2>
           </div>
@@ -133,7 +141,7 @@
 
     <!-- Футер -->
     <footer class="page-footer">
-      <div class="page-footer__inner">
+      <div class="container">
         <!-- Социальные кнопки -->
         <ul class="page-footer__list socials">
           <li class="socials__item">
@@ -169,7 +177,7 @@
 
         <!-- Copyright -->
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
+          <p class="copyright__text">Разработано</p>
 
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
