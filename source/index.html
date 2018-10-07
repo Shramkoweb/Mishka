@@ -11,39 +11,43 @@
   <body class="page">
     <!-- Шапка сайта и раздел навигации -->
     <header class="page-header">
-        <!-- Логотип -->
-        <div class="container">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
-          </a>
-        </div>
+      <!-- Логотип -->
+      <div class="container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+        </a>
+      </div>
 
-        <!-- Навигация по сайту -->
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
-            </li>
+      <!-- Навигация по сайту -->
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+          </li>
 
-            <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
-            </li>
-          </ul>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
 
+        <div class="main-nav__user-nav">
           <a class="main-nav__search main-nav__link" href="#">Поиск по сайту</a>
 
-          <a class="main-nav__cart main-nav__link" href="#">Корзина</a>
+          <a class="main-nav__cart main-nav__link" href="#">Корзина: пока пуста</a>
+        </div>
 
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <span><img src="img/menu.png" alt=""></span>
-          </button>
-        </nav>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <span><img src="img/menu.png" alt=""></span>
+        </button>
+      </nav>
 
-        <!-- Заголовок страницы -->
-        <div class="page-header__title-wrapper page-header__title-wrapper--index">
+      <!-- Заголовок страницы -->
+      <div class="page-header__title-wrapper page-header__title-wrapper--index">
+        <div class="container">
           <h1 class="page-header__title">Милые штуки ручной работы&nbsp;для дома</h1>
         </div>
+      </div>
     </header>
 
     <main>
@@ -52,50 +56,50 @@
         <ul class="categories__list">
           <li class="categories__item">
             <div class="container">
-              <a class="categories__link" href="#">Предметы интерьера</a>
+              <a class="categories__link categories__link--interior" href="#">Предметы интерьера</a>
             </div>
           </li>
 
           <li class="categories__item categories__item--darker">
             <div class="container">
-              <a class="categories__link" href="#">Детские игрушки</a>
+              <a class="categories__link categories__link--toy" href="#">Детские игрушки</a>
             </div>
           </li>
         </ul>
       </section>
       <!-- Блок товара недели -->
-      <section class="special">
-        <h2 class="special__title">Вязаные корзинки</h2>
+      <section class="special container">
+          <h2 class="special__title">Вязаные корзинки</h2>
 
-        <span class="special__tag">Товар недели</span>
+          <span class="special__tag">Товар недели</span>
 
-        <p class="special__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-          размерах.</p>
+          <p class="special__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+            размерах.</p>
 
-        <!-- Таблица -->
-        <table class="special__table special-table">
-          <tr class="special-table__row">
-            <td class="special-table__cell special-table__cell--name">Цвет:</td>
-            <td class="special-table__cell special-table__cell--value">«Тиффани»/серый</td>
-          </tr>
+          <!-- Таблица -->
+          <table class="special__table special-table">
+            <tr class="special-table__row">
+              <td class="special-table__cell special-table__cell--name">Цвет:</td>
+              <td class="special-table__cell special-table__cell--value">«Тиффани»/серый</td>
+            </tr>
 
-          <tr class="special-table__row">
-            <td class="special-table__cell special-table__cell--name">Диаметр:</td>
-            <td class="special-table__cell special-table__cell--value">25 см</td>
-          </tr>
+            <tr class="special-table__row">
+              <td class="special-table__cell special-table__cell--name">Диаметр:</td>
+              <td class="special-table__cell special-table__cell--value">25 см</td>
+            </tr>
 
-          <tr class="special-table__row">
-            <td class="special-table__cell special-table__cell--name">Высота:</td>
-            <td class="special-table__cell special-table__cell--value">15 см</td>
-          </tr>
-        </table>
+            <tr class="special-table__row">
+              <td class="special-table__cell special-table__cell--name">Высота:</td>
+              <td class="special-table__cell special-table__cell--value">15 см</td>
+            </tr>
+          </table>
 
-        <!-- Секция покупки -->
-        <img class="special__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки ручной работы">
+          <!-- Секция покупки -->
+          <img class="special__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки ручной работы">
 
-        <p class="special__price">Цена: 990 руб.</p>
+          <p class="special__price">Цена: 990 руб.</p>
 
-        <button class="special__button button" type="button">Заказать</button>
+          <button class="special__button button" type="button">Заказать</button>
       </section>
 
       <!-- О нас -->

@@ -1,4 +1,12 @@
 .container {
-  margin: 0 auto;
   max-width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $bp-tablet) {
+    max-width: 668px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 1050px;
+  }
 }

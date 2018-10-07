@@ -8,12 +8,41 @@
 }
 
 .categories__link {
+  position: relative;
+
   display: block;
-  padding: 28px 30px;
-  padding-right: 150px;
+  padding-top: 28px;
+  padding-right: 120px;
+  padding-bottom: 28px;
 
   text-align: left;
   color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    opacity: 0.5;
+  }
+
+  &--interior::after {
+    top: 24px;
+    right: 6px;
+
+    width: 40px;
+    height: 62px;
+
+    background-image: url("../img/icon-interior.svg");
+  }
+
+  &--toy::after {
+    top: 22px;
+    right: 0;
+
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+  }
 }
 
 .categories__item {
