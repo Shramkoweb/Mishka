@@ -16,6 +16,11 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  @media (min-width: $bp-desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .special__tag {
@@ -53,6 +58,10 @@
   line-height: 24px;
   text-align: center;
   color: #444444;
+
+  @media (min-width: $bp-tablet) {
+    line-height: 24px;
+  }
 }
 
 .special__image {
