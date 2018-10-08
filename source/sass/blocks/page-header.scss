@@ -27,12 +27,20 @@
     background-position: center -18px;
 
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       padding-top: 66px;
       padding-bottom: 372px;
 
       background-image: url("../../img/hero-tablet@1x.jpg");
       background-position: 50% 43%;
+    }
+
+    @media (min-width: $bp-desktop) {
+      padding-top: 79px;
+      padding-bottom: 359px;
+
+      background-image: url("../../img/hero-desktop@1x.jpg");
+      background-position: 50% 38%;
     }
   }
 }
@@ -45,8 +53,16 @@
   text-align: center;
   color: #010000;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-tablet) {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 70%;
+    margin: 0 auto;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }
