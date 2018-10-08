@@ -17,6 +17,14 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: auto 7px;
+
+    @media (min-width: 768px) {
+      background-size: auto 17px;
+    }
+
+    @media (min-width: 1150px) {
+      background-size: auto 27px;
+    }
   }
 }
 
@@ -27,4 +35,12 @@
 
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-top: 83px;
+    margin-bottom: 48px;
+  }
 }
