@@ -1,4 +1,6 @@
 .special {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 }
@@ -9,6 +11,11 @@
 
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .special__tag {
@@ -16,6 +23,10 @@
 
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media (min-width: $bp-tablet) {
+    line-height: 17px;
+  }
 }
 
 .special__description {
@@ -27,6 +38,10 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+
+  @media (min-width: $bp-tablet) {
+    line-height: 30px;
+  }
 }
 
 .special__price {
@@ -41,10 +56,38 @@
 }
 
 .special__image {
-  width: 260px;
-  height: 315px;
 }
 
 .special__button {
+  width: 100%;
   margin-bottom: 36px;
+}
+
+
+.special__header {
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.special__info {
+  @media (min-width: $bp-tablet) {
+    width: 45%;
+  }
+}
+
+.special__image-wrapper {
+  @media (min-width: $bp-tablet) {
+    position: absolute;
+    top: 143px;
+    left: 50%;
+  }
+}
+
+.special__footer {
+  @media (min-width: $bp-tablet) {
+    width: 45%;
+  }
 }
