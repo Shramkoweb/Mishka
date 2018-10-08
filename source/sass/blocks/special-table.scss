@@ -6,6 +6,10 @@
   font-weight: normal;
   font-size: 15px;
   color: #444444;
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 83px;
+  }
 }
 
 .special-table__row {
