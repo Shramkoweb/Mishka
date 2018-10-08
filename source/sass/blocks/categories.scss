@@ -15,7 +15,7 @@
 
   @include list-reset;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-tablet) {
     display: flex;
     width: 668px;
     margin: 0 auto;
@@ -37,6 +37,10 @@
       background-repeat-x: repeat;
     }
   }
+
+  @media (min-width: 1150px) {
+    width: 1050px;
+  }
 }
 
 .categories__link {
@@ -51,6 +55,10 @@
   @media (min-width: 768px) {
     padding-bottom: 35px;
     padding-left: 36px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-right: 310px;
   }
 
   &--toy {
