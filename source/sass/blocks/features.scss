@@ -18,11 +18,11 @@
     background-repeat: repeat-x;
     background-size: auto 7px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       background-size: auto 17px;
     }
 
-    @media (min-width: 1150px) {
+    @media (min-width: $bp-desktop) {
       background-size: auto 27px;
     }
   }
@@ -36,11 +36,17 @@
   font-size: 25px;
   line-height: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-tablet) {
     font-size: 43px;
     line-height: 50px;
 
     margin-top: 83px;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 76px;
   }
 }

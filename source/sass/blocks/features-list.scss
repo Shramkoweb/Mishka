@@ -6,13 +6,17 @@
 
   @include list-reset;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 700px;
   }
 }
 
@@ -24,7 +28,7 @@
   margin-bottom: 28px;
   padding-top: 55px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-tablet) {
     width: 50%;
     margin-bottom: 56px;
   }
@@ -49,7 +53,7 @@
   }
 
   &--style {
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       order: 2;
     }
 
@@ -64,7 +68,7 @@
   }
 
   &--like {
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       order: 4;
     }
 
@@ -80,7 +84,7 @@
   }
 
   &--handmade {
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       padding-right: 40px;
       order: 1;
     }
@@ -97,7 +101,7 @@
   }
 
   &--native {
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       order: 3;
     }
 
@@ -113,7 +117,7 @@
   }
 
   &--gift {
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       order: 5;
     }
 
