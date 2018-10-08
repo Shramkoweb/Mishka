@@ -3,9 +3,9 @@
 }
 
 .main-nav__list {
-  border-top: 1px solid #ececec;
-
   @include list-reset;
+
+  border-top: 1px solid #ececec;
 }
 
 .main-nav__item {

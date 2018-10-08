@@ -37,16 +37,17 @@
   line-height: 30px;
 
   @media (min-width: $bp-tablet) {
-    font-size: 43px;
-    line-height: 50px;
-
     margin-top: 83px;
     margin-bottom: 48px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media (min-width: $bp-desktop) {
+    margin-top: 76px;
+
     font-size: 53px;
     line-height: 57px;
-    margin-top: 76px;
   }
 }

@@ -1,10 +1,9 @@
 .features-list {
+  @include list-reset;
   position: relative;
 
   display: flex;
   flex-direction: column;
-
-  @include list-reset;
 
   @media (min-width: $bp-tablet) {
     flex-direction: row;
@@ -85,8 +84,8 @@
 
   &--handmade {
     @media (min-width: $bp-tablet) {
-      padding-right: 40px;
       order: 1;
+      padding-right: 40px;
     }
 
     &::before {

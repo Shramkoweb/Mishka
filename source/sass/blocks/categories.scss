@@ -11,9 +11,8 @@
 }
 
 .categories__list {
-  position: relative;
-
   @include list-reset;
+  position: relative;
 
   @media (min-width: $bp-tablet) {
     display: flex;
