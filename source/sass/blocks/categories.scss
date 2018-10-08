@@ -2,7 +2,7 @@
   font-size: 19px;
   line-height: 24px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-tablet) {
     font-size: 20px;
     line-height: 30px;
 
@@ -37,7 +37,7 @@
     }
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $bp-desktop) {
     width: 1050px;
   }
 }
@@ -51,12 +51,12 @@
   text-align: left;
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-tablet) {
     padding-bottom: 35px;
     padding-left: 36px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $bp-desktop) {
     padding-right: 310px;
   }
 
@@ -84,7 +84,7 @@
 
     background-image: url("../img/icon-interior.svg");
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       top: 30px;
     }
   }
@@ -98,7 +98,7 @@
 
     background-image: url("../img/icon-toy.svg");
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet) {
       top: 30px;
       right: 35px;
     }
@@ -106,7 +106,7 @@
 }
 
 .categories__item {
-  @media (min-width: 768px) {
+  @media (min-width: $bp-tablet) {
     width: 50%;
   }
 }
