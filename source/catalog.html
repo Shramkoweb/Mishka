@@ -6,54 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Мишка - каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="pixel-glass/styles.css" rel="stylesheet">
+    <script src="pixel-glass/script.js"></script>
+    <style>
+      html {
+        background: url("img/page-mobile.jpg") 50% 0 no-repeat;
+      }
+
+      @media (min-width: 768px) {
+        html {
+          background-image: url("img/page-tablet.jpg");
+        }
+      }
+
+      @media (min-width: 1150px) {
+        html {
+          background-image: url("img/page-desktop.jpg");
+        }
+      }
+    </style>
   </head>
 
   <body class="page">
     <!-- Шапка сайта и раздел навигации -->
     <header class="page-header">
-        <!-- Логотип -->
-        <div class="container">
-          <div class="page-header__logo-wrapper">
-            <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
-            </a>
-          </div>
+      <!-- Логотип -->
+      <div class="container">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+          </a>
+        </div>
+      </div>
+
+      <!-- Навигация по сайту -->
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
+
+        <div class="main-nav__user-nav">
+          <a class="main-nav__search main-nav__link" href="#">
+            Поиск по сайту
+            <img class="main-nav__search-icon" src="img/icon-search.svg" alt="Поиск по сайту">
+          </a>
+
+          <a class="main-nav__cart main-nav__link" href="#">
+            Корзина: пока пуста
+            <img class="main-nav__cart-icon" src="img/icon-cart.svg" alt="Поиск по сайту">
+          </a>
         </div>
 
-        <!-- Навигация по сайту -->
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
-            </li>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <span><img src="img/menu.png" alt="Открыть меню"></span>
+        </button>
+      </nav>
 
-            <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
-            </li>
-          </ul>
-
-          <div class="main-nav__user-nav">
-            <a class="main-nav__search main-nav__link" href="#">
-              Поиск по сайту
-              <img class="main-nav__search-icon" src="img/icon-search.svg" alt="Поиск по сайту">
-            </a>
-
-            <a class="main-nav__cart main-nav__link" href="#">
-              Корзина: пока пуста
-              <img class="main-nav__cart-icon" src="img/icon-cart.svg" alt="Поиск по сайту">
-            </a>
-          </div>
-
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <span><img src="img/menu.png" alt="Открыть меню"></span>
-          </button>
-        </nav>
-
-        <!-- Заголовок страницы -->
-        <div class="page-header__title-wrapper page-header__title-wrapper--catalog">
-          <h1 class="page-header__title">Каталог товаров</h1>
-        </div>
+      <!-- Заголовок страницы -->
+      <div class="page-header__title-wrapper page-header__title-wrapper--catalog">
+        <h1 class="page-header__title">Каталог товаров</h1>
+      </div>
       </div>
     </header>
 

@@ -10,3 +10,7 @@ node_modules/
 npm-debug.*
 source/css/*.css
 Thumbs.db
+source/img/page-desktop.jpg
+source/img/page-mobile.jpg
+source/img/page-tablet.jpg
+source/pixel-glass
