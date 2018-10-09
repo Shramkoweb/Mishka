@@ -41,6 +41,10 @@
 
 .contacts__map-wrapper {
   margin-bottom: 42px;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 74px;
+  }
 }
 
 .contacts__button {
