@@ -7,6 +7,7 @@
   @media (min-width: $bp-tablet) {
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-position: 0 26px;
   }
 
   &::after {
@@ -31,6 +32,10 @@
 
 .reviews__quotation {
   margin: 0;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 120px;
+  }
 }
 
 .reviews__title {
@@ -86,6 +91,7 @@
 
   @media (min-width: $bp-tablet) {
     display: block;
+    margin-bottom: 6px;
 
     font-size: 18px;
     line-height: 24px;
