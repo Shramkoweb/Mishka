@@ -1,5 +1,9 @@
 .page-footer {
   background-color: #fafafa;
+
+  @media (min-width: $bp-desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .page-footer__logo-wrapper {

@@ -20,4 +20,8 @@
     padding-top: 14px;
     border: none;
   }
+
+  @media (min-width: $bp-desktop) {
+    margin-left: 350px;
+  }
 }
