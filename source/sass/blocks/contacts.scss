@@ -14,7 +14,16 @@
 
       width: 50px;
       height: 85px;
+
+      @media (min-width: $bp-desktop) {
+        top: 196px;
+        left: 113px;
+      }
     }
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 61px;
   }
 }
 
@@ -36,6 +45,9 @@
   }
 
   @media (min-width: $bp-desktop) {
+    padding-top: 203px;
+    padding-left: 168px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -47,6 +59,12 @@
   @media (min-width: $bp-tablet) {
     margin-bottom: 74px;
   }
+
+  @media (min-width: $bp-desktop) {
+    position: absolute;
+    top: 134px;
+    right: 50px;
+  }
 }
 
 .contacts__button {
@@ -55,5 +73,10 @@
 
   @media (min-width: $bp-tablet) {
     width: 230px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-left: 225px;
+    margin-top: 79px;
   }
 }

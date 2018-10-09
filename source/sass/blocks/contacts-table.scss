@@ -13,7 +13,15 @@
 
     tbody {
       display: flex;
+
+      @media (min-width: $bp-desktop) {
+        flex-direction: column;
+      }
     }
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-left: 173px;
   }
 }
 
