@@ -2,6 +2,18 @@
   position: relative;
 
   margin-bottom: 40px;
+
+  @media (min-width: $bp-tablet) {
+    &::before {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      top: 56px;
+      right: 50px;
+
+      width: 50px;
+      height: 85px;
+    }
+  }
 }
 
 .contacts__title {
@@ -11,6 +23,20 @@
 
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $bp-tablet) {
+    margin: 0;
+    margin-bottom: 48px;
+    padding-top: 73px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .contacts__map-wrapper {
@@ -20,4 +46,8 @@
 .contacts__button {
   width: 81%;
   margin: auto;
+
+  @media (min-width: $bp-tablet) {
+    width: 230px;
+  }
 }

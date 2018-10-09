@@ -7,6 +7,14 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 17px;
+
+    tbody {
+      display: flex;
+    }
+  }
 }
 
 .contacts-table__row {
@@ -17,9 +25,22 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $bp-tablet) {
+    margin-right: 51px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
 }
 
 .contacts-table__cell-name {
   flex-shrink: 0;
   width: 29%;
+
+  @media (min-width: $bp-tablet) {
+    width: auto;
+    padding-right: 22px;
+  }
 }
