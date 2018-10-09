@@ -1,3 +1,11 @@
 .page-footer {
   background-color: #fafafa;
 }
+
+.page-footer__logo-wrapper {
+  display: none;
+
+  @media (min-width: $bp-tablet) {
+    display: block;
+  }
+}
