@@ -43,6 +43,18 @@
       background-position: 50% 38%;
     }
   }
+
+  &--catalog {
+    @media (min-width: $bp-tablet) {
+      padding-top: 105px;
+      padding-bottom: 92px;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-position: bottom center;
+      background-repeat: repeat-x;
+      background-size: auto 22px;
+      margin-bottom: 65px;
+    }
+  }
 }
 
 .page-header__title {
