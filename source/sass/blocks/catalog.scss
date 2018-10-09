@@ -22,6 +22,11 @@
 
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .catalog-item__description {
@@ -33,11 +38,22 @@
   font-size: 13px;
   line-height: 32px;
   color: #444444;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .catalog-item__price {
+  position: relative;
+
   font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 17px;
+  }
 }
 
 .catalog-item {
@@ -46,8 +62,41 @@
   margin-bottom: 30px;
 
   border: 1px solid #ececec;
+
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+    min-height: 333px;
+    margin-bottom: 58px;
+  }
 }
 
 .catalog-item__info {
   padding: 9px 27px 28px;
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.catalog-item__link {
+  &--image {
+    @media (min-width: $bp-tablet) {
+      flex-shrink: 0;
+      width: 333px;
+    }
+  }
+}
+
+.catalog-item__footer {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: auto;
+    padding-top: 18px;
+
+    border-top: 1px solid #ececec;
+  }
 }
