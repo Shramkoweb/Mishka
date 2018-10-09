@@ -4,6 +4,8 @@
   margin-bottom: 40px;
 
   @media (min-width: $bp-tablet) {
+    margin-bottom: 61px;
+
     &::before {
       content: url("../img/icon-flag.svg");
       position: absolute;
