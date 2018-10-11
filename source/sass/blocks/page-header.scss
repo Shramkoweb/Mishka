@@ -46,13 +46,25 @@
 
   &--catalog {
     @media (min-width: $bp-tablet) {
+      margin-bottom: 65px;
       padding-top: 105px;
       padding-bottom: 92px;
+
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-position: bottom center;
       background-repeat: repeat-x;
+      background-position: bottom center;
       background-size: auto 22px;
-      margin-bottom: 65px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $bp-tablet) {
+      padding-top: 105px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: bottom center;
+      background-size: auto 22px;
     }
   }
 }
