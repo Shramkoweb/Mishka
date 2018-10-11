@@ -19,6 +19,21 @@
 
   background-color: #fafafa;
 
+  @media (min-width: $bp-tablet) {
+    padding-top: 105px;
+    padding-bottom: 92px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: auto 22px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    background-size: auto 34px;
+    padding-bottom: 118px;
+  }
+
   &--index {
     padding-bottom: 120px;
 
@@ -33,6 +48,7 @@
 
       background-image: url("../../img/hero-tablet@1x.jpg");
       background-position: 50% 43%;
+      background-size: auto;
     }
 
     @media (min-width: $bp-desktop) {
@@ -41,31 +57,6 @@
 
       background-image: url("../../img/hero-desktop@1x.jpg");
       background-position: 50% 38%;
-    }
-  }
-
-  &--catalog {
-    @media (min-width: $bp-tablet) {
-      margin-bottom: 65px;
-      padding-top: 105px;
-      padding-bottom: 92px;
-
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: bottom center;
-      background-size: auto 22px;
-    }
-  }
-
-  &--form {
-    @media (min-width: $bp-tablet) {
-      padding-top: 105px;
-      padding-bottom: 86px;
-
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: bottom center;
-      background-size: auto 22px;
     }
   }
 }
