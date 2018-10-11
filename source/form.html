@@ -77,18 +77,21 @@
     </header>
 
     <main>
-      <div class="container">
-        <!-- Блок формы -->
-        <section class="knitting">
+      <!-- Блок формы -->
+      <section class="knitting">
+        <div class="container">
           <p class="knitting__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
             заказа
             и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
 
-          <div class="knitting__form-wrapper">
-            <!-- Форма -->
-            <form class="knitting__form form" action="https://echo.htmlacademy.ru" method="GET">
+        <div class="knitting__form-wrapper">
+          <!-- Форма -->
+          <form class="knitting__form form" action="https://echo.htmlacademy.ru" method="GET">
+            <div class="container">
+
               <!-- Блок выбора типа изделия -->
-              <fieldset class="form-group">
+              <fieldset class="form-group form-group--type">
                 <legend class="form-group__title">Тип</legend>
 
                 <!-- Первый радио-инпут -->
@@ -112,10 +115,11 @@
                   </li>
                 </ul>
               </fieldset>
+            </div>
 
-
-              <!-- Блок выбора цвета -->
-              <fieldset class="form-group">
+            <!-- Блок выбора цвета -->
+            <fieldset class="form-group form-group--grey">
+              <div class="container">
                 <legend class="form-group__title">Цвет</legend>
 
                 <ul class="form__list">
@@ -179,11 +183,12 @@
                     </label>
                   </li>
                 </ul>
+              </div>
+            </fieldset>
 
-              </fieldset>
-
-              <!-- Блок ФИО -->
-              <fieldset class="form-group">
+            <!-- Блок ФИО -->
+            <fieldset class="form-group">
+              <div class="container">
                 <legend class="form-group__title form-group__title--about">ФИО</legend>
 
                 <ul class="form__list">
@@ -208,10 +213,13 @@
                     </label>
                   </li>
                 </ul>
-              </fieldset>
+              </div>
+            </fieldset>
 
-              <!-- Блок телефон -->
-              <div class="form-group form-group--number">
+
+            <!-- Блок телефон -->
+            <div class="form-group">
+              <div class="container">
                 <label class="form-group__title" for="number">
                   Тел
                 </label>
@@ -222,32 +230,34 @@
 
               <!-- Блок почты -->
               <div class="form-group">
-                <label class="form-group__title" for="mail">
-                  E-mail
-                </label>
+                <div class="container">
+                  <label class="form-group__title form-group__title--email" for="mail">
+                    E-mail
+                  </label>
 
-                <input class="form-group__input form-group__input--contacts" type="email" name="user-mail" placeholder="Ваш Email*"
-                  required id="mail">
+                  <input class="form-group__input form-group__input--contacts" type="email" name="user-mail"
+                    placeholder="Ваш Email*" required id="mail">
+                </div>
               </div>
 
-              <!-- Блок дополнительной информации -->
-              <div class="form-group">
-                <label class="form-group__title" for="more">
-                  Доп
-                </label>
+              <div class="container">
+                <!-- Блок дополнительной информации -->
+                <div class="form-group form-group--more">
+                  <label class="form-group__title" for="more">
+                    Доп
+                  </label>
 
-                <textarea class="form-group__textarea" name="more" cols="30" rows="7" placeholder="Опишите все ваши пожелания к заказу"
-                  id="more"></textarea>
+                  <textarea class="form-group__textarea" name="more" cols="30" rows="5" placeholder="Опишите все ваши пожелания к заказу"
+                    id="more"></textarea>
+                </div>
 
+                <span class="form__mark">*Поля обязательны для заполнения</span>
+
+                <button class="form__submit button">Отправить заказ</button>
               </div>
-
-              <span class="form__mark">*Поля обязательны для заполнения</span>
-
-              <button class="form__submit button">Отправить заказ</button>
-            </form>
-          </div>
-        </section>
-      </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Футер -->
