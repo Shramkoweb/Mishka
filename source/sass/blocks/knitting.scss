@@ -20,4 +20,10 @@
     margin-top: 66px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $bp-desktop) {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 105px;
+  }
 }

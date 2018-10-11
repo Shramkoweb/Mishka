@@ -20,6 +20,11 @@
       padding-left: 125px;
     }
   }
+
+  @media (min-width: $bp-desktop) {
+    flex-direction: column;
+    padding-left: 78px;
+  }
 }
 
 .form__list--has-wrapper .form__item--checkbox {
@@ -80,6 +85,12 @@
       display: none;
     }
   }
+
+  @media (min-width: $bp-desktop) {
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+
 
   &--about {
     margin-bottom: 28px;
@@ -153,6 +164,7 @@
 
 .form-group__label {
   position: relative;
+
   display: inline-block;
 
   cursor: pointer;
@@ -261,9 +273,10 @@
   }
 
   @media (min-width: $bp-tablet) {
+    margin-right: 25px;
+
     font-size: 19px;
     line-height: 18px;
-    margin-right: 25px;
   }
 }
 
@@ -323,6 +336,7 @@
 
     @media (min-width: $bp-tablet) {
       width: 500px;
+
       background-color: #f1f1f1;
     }
   }
