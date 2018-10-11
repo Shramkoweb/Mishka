@@ -8,22 +8,22 @@
   @media (min-width: $bp-tablet) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 130px;
 
     &--has-wrapper {
       justify-content: space-between;
-      padding-left: 123px;
+
+      @media (min-width: $bp-desktop) {
+        flex-direction: row;
+      }
     }
 
     &--about {
       flex-direction: column;
-      padding-left: 125px;
     }
   }
 
   @media (min-width: $bp-desktop) {
     flex-direction: column;
-    padding-left: 78px;
   }
 }
 
@@ -80,6 +80,8 @@
   @media (min-width: $bp-tablet) {
     float: left;
     margin-top: 19px;
+    width: 167px;
+    text-align: left;
 
     &::after {
       display: none;
@@ -87,8 +89,8 @@
   }
 
   @media (min-width: $bp-desktop) {
-    margin-top: 20px;
-    margin-left: 60px;
+    width: 175px;
+    text-align: center;
   }
 
 
