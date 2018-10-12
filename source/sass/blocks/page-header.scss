@@ -2,6 +2,18 @@
   position: relative;
 
   background-color: #ffffff;
+
+  @media (min-width: $bp-tablet) {
+    background: linear-gradient(white 50%, #ececec 2%, transparent 51%);
+    background-color: #fafafa;
+    background-size: 100% 176px;
+  }
+}
+
+.page-header__inner {
+  @media (min-width: $bp-tablet) {
+    display: flex;
+  }
 }
 
 .page-header__logo-wrapper {
@@ -9,6 +21,14 @@
   justify-content: center;
   align-items: center;
   height: 79px;
+
+  @media (min-width: $bp-tablet) {
+    order: 1;
+    width: 320px;
+    height: 88px;
+
+    background-color: #ffffff;
+  }
 }
 
 .page-header__title-wrapper {
@@ -30,8 +50,9 @@
   }
 
   @media (min-width: $bp-desktop) {
-    background-size: auto 34px;
     padding-bottom: 118px;
+
+    background-size: auto 34px;
   }
 
   &--index {
@@ -57,6 +78,7 @@
 
       background-image: url("../../img/hero-desktop@1x.jpg");
       background-position: 50% 38%;
+      background-repeat: no-repeat;
     }
   }
 }
