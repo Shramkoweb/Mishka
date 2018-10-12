@@ -31,7 +31,6 @@
   <body class="page">
     <!-- Шапка сайта и раздел навигации -->
     <header class="page-header">
-      <div class="container">
         <div class="page-header__inner">
           <!-- Навигация по сайту -->
           <nav class="main-nav">
@@ -44,24 +43,24 @@
 
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+                <a class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
               </li>
 
               <li class="main-nav__item">
-                <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+                <a href="form.html" class="main-nav__link main-nav__link--form">Вязание на заказ</a>
               </li>
             </ul>
 
             <ul class="main-nav__list main-nav__list--user">
               <li class="main-nav__item">
-                <a class="main-nav__search main-nav__link" href="#">
+                <a class="main-nav__link main-nav__link--search" href="#">
                   Поиск по сайту
                   <img class="main-nav__search-icon" src="img/icon-search.svg" alt="Поиск по сайту">
                 </a>
               </li>
 
               <li class="main-nav__item">
-                <a class="main-nav__cart main-nav__link" href="#">
+                <a class="main-nav__link main-nav__link--cart" href="#">
                   Корзина: пока пуста
                   <img class="main-nav__cart-icon" src="img/icon-cart.svg" alt="Поиск по сайту">
                 </a>
@@ -74,10 +73,11 @@
               <span><img src="img/menu.png" alt="Открыть меню"></span>
             </button>
 
-            <p class="main-nav__delivery-text">Бесплатная доставка по России</p>
+            <p class="main-nav__text main-nav__text--delivery">Бесплатная доставка по России</p>
+            <p class="main-nav__text main-nav__text--new">Новые поступления</p>
+            <p class="main-nav__text main-nav__text--sell">Распродажа</p>
           </nav>
         </div>
-      </div>
 
       <!-- Заголовок страницы -->
       <div class="page-header__title-wrapper page-header__title-wrapper--catalog">
