@@ -11,53 +11,53 @@
   <body class="page">
     <!-- Шапка сайта и раздел навигации -->
     <header class="page-header">
-        <div class="page-header__inner">
-          <!-- Навигация по сайту -->
-          <nav class="main-nav">
-            <div class="page-header__logo-wrapper">
-              <!-- Логотип -->
-              <a class="page-header__logo">
-                <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+      <div class="page-header__inner">
+        <!-- Навигация по сайту -->
+        <nav class="main-nav">
+          <div class="page-header__logo-wrapper">
+            <!-- Логотип -->
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+            </a>
+          </div>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link main-nav__link--form">Вязание на заказ</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list main-nav__list--user">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--search" href="#">
+                Поиск по сайту
+                <img class="main-nav__search-icon" src="img/icon-search.svg" alt="Поиск по сайту">
               </a>
-            </div>
+            </li>
 
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
-              </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--cart" href="#">
+                Корзина: пока пуста
+                <img class="main-nav__cart-icon" src="img/icon-cart.svg" alt="Поиск по сайту">
+              </a>
+            </li>
+          </ul>
 
-              <li class="main-nav__item">
-                <a href="form.html" class="main-nav__link main-nav__link--form">Вязание на заказ</a>
-              </li>
-            </ul>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
 
-            <ul class="main-nav__list main-nav__list--user">
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--search" href="#">
-                  Поиск по сайту
-                  <img class="main-nav__search-icon" src="img/icon-search.svg" alt="Поиск по сайту">
-                </a>
-              </li>
+            <span><img src="img/menu.png" alt="Открыть меню"></span>
+          </button>
 
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--cart" href="#">
-                  Корзина: пока пуста
-                  <img class="main-nav__cart-icon" src="img/icon-cart.svg" alt="Поиск по сайту">
-                </a>
-              </li>
-            </ul>
-
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-
-              <span><img src="img/menu.png" alt="Открыть меню"></span>
-            </button>
-
-            <p class="main-nav__text main-nav__text--delivery">Бесплатная доставка по России</p>
-            <p class="main-nav__text main-nav__text--new">Новые поступления</p>
-            <p class="main-nav__text main-nav__text--sell">Распродажа</p>
-          </nav>
-        </div>
+          <p class="main-nav__text main-nav__text--delivery">Бесплатная доставка по России</p>
+          <p class="main-nav__text main-nav__text--new">Новые поступления</p>
+          <p class="main-nav__text main-nav__text--sell">Распродажа</p>
+        </nav>
+      </div>
 
       <!-- Заголовок страницы -->
       <div class="page-header__title-wrapper page-header__title-wrapper--index">
@@ -206,7 +206,9 @@
           <table class="contacts__table contacts-table">
             <tr class="contacts-table__row">
               <td class="contacts-table__cell contacts-table__cell-name">e-mail:</td>
-              <td class="contacts-table__cell contacts-table__cell-value">info@mimimishkashop.ru</td>
+              <td class="contacts-table__cell contacts-table__cell-value">
+                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
             </tr>
 
             <tr class="contacts-table__row">
