@@ -17,8 +17,8 @@
 
   @media (min-width: $bp-tablet) {
     display: flex;
-    order: 3;
     flex-wrap: wrap;
+    order: 3;
 
     border: none;
 
@@ -40,12 +40,19 @@
 
 .main-nav__link {
   position: relative;
-  font-size: 15px;
 
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 76px;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:active {
+    color: $link-active;
+  }
 
   @media (min-width: $bp-tablet) {
     width: 167px;
@@ -63,12 +70,20 @@
     }
 
     &--cart {
-      font-size: 17px;
       width: 264px;
       height: 88px;
       padding-top: 31px;
 
+      font-size: 17px;
       text-align: right;
+    }
+
+    &--catalog {
+      font-size: 15px;
+    }
+
+    &--form {
+      font-size: 15px;
     }
   }
 }
@@ -87,6 +102,7 @@
   position: absolute;
   top: 30px;
   left: 31px;
+
   @media (min-width: $bp-tablet) {
     top: 35px;
   }
@@ -118,9 +134,10 @@
     &--delivery {
       display: inline;
       order: 5;
-      font-size: 15px;
-      font-weight: 400;
       padding-top: 18px;
+
+      font-weight: 400;
+      font-size: 15px;
     }
   }
 }
