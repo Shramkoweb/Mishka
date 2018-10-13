@@ -20,8 +20,8 @@
   margin-top: 30px;
 
   @media (min-width: $bp-desktop) {
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -101,6 +101,14 @@
 }
 
 .catalog-item__link {
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:active {
+    color: $link-active;
+  }
+
   &--image {
     @media (min-width: $bp-tablet) {
       flex-shrink: 0;
