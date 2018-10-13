@@ -357,6 +357,10 @@
     border-bottom: 2px solid #000000;
     border-left: none;
 
+    &:hover {
+      border-color: #62d1ba;
+    }
+
     @media (min-width: $bp-tablet) {
       padding-left: 15px;
     }
@@ -370,6 +374,10 @@
     border-right: none;
     border-bottom: 2px solid #000000;
     border-left: none;
+
+    &:hover {
+      border-color: #62d1ba;
+    }
 
     @media (min-width: $bp-tablet) {
       width: 500px;
@@ -399,6 +407,10 @@
   padding-bottom: 26px;
 
   border: 2px solid #444444;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
 
   @media (min-width: $bp-tablet) {
     width: 501px;
