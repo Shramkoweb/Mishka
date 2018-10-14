@@ -2,38 +2,90 @@
   position: relative;
 
   background-color: #ffffff;
+
+  @media (min-width: $bp-tablet) {
+    background: linear-gradient(white 88px, #ececec 2px, transparent 90px);
+    background-color: #fafafa;
+    background-size: 100% 176px;
+    background-repeat: no-repeat;
+  }
 }
 
 .page-header__inner {
-  max-width: 320px;
-  margin: 0 auto;
+  @media (min-width: $bp-tablet) {
+    display: flex;
+  }
 }
 
-.page-header__logo {
-  display: block;
-  width: 87px;
-  margin: 0 auto;
-  padding-top: 22px;
+.page-header__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79px;
 
-  border-bottom: 1px solid #ececec;
+  @media (min-width: $bp-tablet) {
+    order: 1;
+    width: 320px;
+    height: 88px;
+
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $bp-desktop) {
+    order: 2;
+    width: auto;
+  }
 }
 
 .page-header__title-wrapper {
   padding-top: 70px;
   padding-right: 30px;
-  padding-bottom: 120px;
+  padding-bottom: 77px;
   padding-left: 30px;
 
   background-color: #fafafa;
 
-  &--index {
-    background-image: url("../../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center -15px;
+  @media (min-width: $bp-tablet) {
+    padding-top: 105px;
+    padding-bottom: 92px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: auto 22px;
   }
 
-  &--catalog {
-    padding-bottom: 77px;
+  @media (min-width: $bp-desktop) {
+    padding-bottom: 118px;
+
+    background-size: auto 34px;
+  }
+
+  &--index {
+    padding-bottom: 120px;
+
+    background-image: url("../../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+
+
+    @media (min-width: $bp-tablet) {
+      padding-top: 66px;
+      padding-bottom: 372px;
+
+      background-image: url("../../img/hero-tablet@1x.jpg");
+      background-position: 50% 43%;
+      background-size: auto;
+    }
+
+    @media (min-width: $bp-desktop) {
+      padding-top: 79px;
+      padding-bottom: 359px;
+
+      background-image: url("../../img/hero-desktop@1x.jpg");
+      background-position: 50% 38%;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -44,4 +96,17 @@
   line-height: 30px;
   text-align: center;
   color: #010000;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 70%;
+    margin: 0 auto;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

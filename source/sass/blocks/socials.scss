@@ -1,8 +1,26 @@
 .socials {
   @include list-reset;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
-  padding: 26px 91px 16px 88px;
+  padding-top: 25px;
+  padding-right: 62px;
+  padding-bottom: 23px;
+  padding-left: 56px;
+
+  border-bottom: 1px solid #ececec;
+
+  @media (min-width: $bp-tablet) {
+    width: 140px;
+    margin: 0;
+    margin-left: 160px;
+    padding: 0;
+    padding-top: 14px;
+    border: none;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-left: 350px;
+  }
 }

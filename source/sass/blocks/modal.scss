@@ -1,9 +1,9 @@
 .modal {
-  display: flex;
+  display: none;
   flex-direction: column;
-  padding: 30px;
   width: 320px;
   margin: 0 auto;
+  padding: 30px;
 
   border: 1px solid #c6c6c6;
 }
@@ -31,12 +31,15 @@
 
 .modal__form-group {
   margin-bottom: 30px;
+
   border: none;
 }
 
 .modal__submit {
-  color: #ffffff;
   width: 100%;
-  border: none;
+
+  color: #ffffff;
+
   background-color: #63d1bb;
+  border: none;
 }

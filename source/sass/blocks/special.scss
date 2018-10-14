@@ -1,15 +1,29 @@
 .special {
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px;
-  padding-top: 28px;
+  position: relative;
 }
 
 .special__title {
   margin: 0;
+  margin-top: 27px;
 
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 42px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    z-index: 1;
+
+    margin-top: 120px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .special__tag {
@@ -17,6 +31,21 @@
 
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media (min-width: $bp-tablet) {
+    width: 75px;
+    margin-top: 53px;
+    margin-right: 26px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-top: 134px;
+    margin-right: 50px;
+    margin-left: 44px;
+  }
 }
 
 .special__description {
@@ -28,19 +57,79 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 50px;
+    margin-bottom: 33px;
+
+    line-height: 30px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 45px;
+  }
 }
 
 .special__price {
   margin: 0;
   margin-top: 22px;
   margin-bottom: 25px;
+
   font-size: 17px;
   line-height: 24px;
   text-align: center;
   color: #444444;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 25px;
+    margin-bottom: 34px;
+
+    font-size: 20px;
+  }
 }
 
-.special__image {
-  width: 260px;
-  height: 315px;
+.special__button {
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+
+.special__header {
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $bp-desktop) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+.special__info {
+  @media (min-width: $bp-tablet) {
+    width: 300px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-left: 175px;
+  }
+}
+
+.special__image-wrapper {
+  @media (min-width: $bp-tablet) {
+    position: absolute;
+    top: 143px;
+    left: 50%;
+  }
+}
+
+.special__footer {
+  @media (min-width: $bp-tablet) {
+    width: 292px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-left: 175px;
+  }
 }

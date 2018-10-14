@@ -1,13 +1,30 @@
 .features {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
 }
 
 .features__title {
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 31px;
+
   font-size: 25px;
   line-height: 30px;
-  margin: 0;
-  margin-top: 70px;
-  margin-bottom: 30px;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 83px;
+    margin-bottom: 48px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-top: 118px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
