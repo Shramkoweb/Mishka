@@ -78,7 +78,6 @@
 
 .reviews__author {
   display: block;
-  margin-bottom: 6px;
 
   font-style: normal;
 
@@ -121,8 +120,8 @@
 
   @media (min-width: $bp-tablet) {
     position: absolute;
-    bottom: 100px;
     right: 57px;
+    bottom: 100px;
 
     width: 167px;
   }
