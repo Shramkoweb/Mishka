@@ -37,6 +37,7 @@
 
   @media (min-width: $bp-desktop) {
     order: 1;
+    max-width: 400px;
 
     &--user {
       order: 3;
@@ -97,9 +98,17 @@
 
   @media (min-width: $bp-desktop) {
     font-size: 17px;
-
     &--search {
       font-size: 0;
+    }
+
+    &--catalog {
+      width: 184px;
+    }
+
+    &--form {
+      width: auto;
+      padding-left: 35px;
     }
   }
 }
@@ -116,8 +125,12 @@
 
 .main-nav__cart-icon {
   position: absolute;
-  top: 2px;
+  top: 29px;
   left: 31px;
+
+  @media (min-width: $bp-tablet) {
+    top: 2px;
+  }
 }
 
 .main-nav__toggle {
@@ -139,16 +152,41 @@
 }
 
 .main-nav__promo-list {
-  @include list-reset;
+  display: none;
 
-  display: flex;
-  order: 4;
+  @media (min-width: $bp-tablet) {
+    @include list-reset;
+
+    display: flex;
+    order: 4;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 100%;
+  }
 }
 
 .main-nav__promo-item {
   display: flex;
   align-items: center;
   min-height: 60px;
+
+  @media (min-width: $bp-desktop) {
+    min-width: 175px;
+    &--new {
+      order: 1;
+    }
+
+    &--sell {
+      justify-content: center;
+      order: 2;
+    }
+
+    &--delivery {
+      order: 3;
+      margin-left: auto;
+    }
+  }
 }
 
 .main-nav__promo-link {
@@ -160,6 +198,16 @@
 
     &--delivery {
       display: block;
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+    display: block;
+
+    font-weight: 700;
+
+    &--delivery {
+      font-weight: 400;
     }
   }
 }
