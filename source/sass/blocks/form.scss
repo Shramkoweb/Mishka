@@ -317,11 +317,11 @@
       display: block;
     }
 
-    &:hover ~ .form-group__label--radio::before {
+    &:hover + .form-group__label--radio::before {
       border-color: #62d1ba;
     }
 
-    &:active ~ .form-group__label--radio::before {
+    &:active + .form-group__label--radio::before {
       border-color: rgba(68, 68, 68, 0.3);
     }
   }
@@ -339,11 +339,11 @@
       display: block;
     }
 
-    &:hover ~ .form-group__label--checkbox::before {
+    &:hover + .form-group__label--checkbox::before {
       border-color: #62d1ba;
     }
 
-    &:active ~ .form-group__label--checkbox::before {
+    &:active + .form-group__label--checkbox::before {
       border-color: rgba(68, 68, 68, 0.3);
     }
   }
