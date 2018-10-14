@@ -6,6 +6,8 @@
 /* Базовая стилизация */
 @import "base.scss";
 @import "visually-hidden.scss";
+/* Волнистая линия */
+@import "blocks/zig-zag.scss";
 /* Контейнер */
 @import "blocks/container.scss";
 /* Хедер */
