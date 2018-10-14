@@ -1,10 +1,12 @@
 .special {
   position: relative;
+
+  margin-top: 27px;
+  padding-bottom: 36px;
 }
 
 .special__title {
   margin: 0;
-  margin-top: 27px;
 
   font-size: 25px;
   line-height: 30px;
@@ -27,6 +29,7 @@
 }
 
 .special__tag {
+  display: block;
   margin-top: 5px;
 
   color: #63d1bb;
@@ -50,8 +53,7 @@
 
 .special__description {
   margin: 0;
-  margin-top: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   font-weight: normal;
   font-size: 15px;
@@ -72,7 +74,6 @@
 
 .special__price {
   margin: 0;
-  margin-top: 22px;
   margin-bottom: 25px;
 
   font-size: 17px;
@@ -90,7 +91,6 @@
 
 .special__button {
   width: 100%;
-  margin-bottom: 36px;
 }
 
 
@@ -107,6 +107,8 @@
 }
 
 .special__info {
+  margin-top: 23px;
+
   @media (min-width: $bp-tablet) {
     width: 300px;
   }
@@ -117,6 +119,8 @@
 }
 
 .special__image-wrapper {
+  margin-bottom: 25px;
+
   @media (min-width: $bp-tablet) {
     position: absolute;
     top: 143px;
