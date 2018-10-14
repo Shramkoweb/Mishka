@@ -4,9 +4,10 @@
   background-color: #ffffff;
 
   @media (min-width: $bp-tablet) {
-    background: linear-gradient(white 50%, #ececec 2%, transparent 51%);
+    background: linear-gradient(white 88px, #ececec 2px, transparent 90px);
     background-color: #fafafa;
     background-size: 100% 176px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -28,6 +29,10 @@
     height: 88px;
 
     background-color: #ffffff;
+  }
+
+  @media (min-width: $bp-desktop) {
+    order: 2;
   }
 }
 
