@@ -1,7 +1,8 @@
 .categories {
+  position: relative;
+
   font-size: 19px;
   line-height: 24px;
-  position: relative;
 
   @media (min-width: $bp-tablet) {
     font-size: 20px;
@@ -15,18 +16,19 @@
       top: 87%;
 
       display: block;
-      height: 24px;
       width: 100%;
+      height: 24px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat-x: repeat;
 
+      background-repeat-x: repeat;
     }
   }
 
   @media (min-width: $bp-desktop) {
     &::after {
       height: 34px;
+
       background-size: 1250px;
     }
   }
