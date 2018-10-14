@@ -6,6 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="pixel-glass/styles.css" rel="stylesheet">
+    <script src="pixel-glass/script.js"></script>
+    <style>
+      html {
+        background: url("img/mishka-index-mobile.jpg") 50% 0 no-repeat;
+      }
+
+      @media (min-width: 768px) {
+        html {
+          background-image: url("img/mishka-index-tablet.jpg");
+        }
+      }
+
+      @media (min-width: 1150px) {
+        html {
+          background-image: url("img/mishka-index-desktop.jpg");
+        }
+      }
+    </style>
   </head>
 
   <body class="page">
@@ -91,45 +110,47 @@
         </ul>
       </section>
       <!-- Блок товара недели -->
-      <section class="special container">
-        <header class="special__header">
-          <h2 class="special__title">Вязаные корзинки</h2>
+      <section class="special">
+        <div class="container">
+          <header class="special__header">
+            <h2 class="special__title">Вязаные корзинки</h2>
 
-          <span class="special__tag">Товар недели</span>
-        </header>
+            <span class="special__tag">Товар недели</span>
+          </header>
 
-        <div class="special__info">
-          <p class="special__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-            размерах.</p>
+          <div class="special__info">
+            <p class="special__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+              размерах.</p>
 
-          <!-- Таблица -->
-          <table class="special__table special-table">
-            <tr class="special-table__row">
-              <td class="special-table__cell special-table__cell--name">Цвет:</td>
-              <td class="special-table__cell special-table__cell--value">«Тиффани»/серый</td>
-            </tr>
+            <!-- Таблица -->
+            <table class="special__table special-table">
+              <tr class="special-table__row">
+                <td class="special-table__cell special-table__cell--name">Цвет:</td>
+                <td class="special-table__cell special-table__cell--value">«Тиффани»/серый</td>
+              </tr>
 
-            <tr class="special-table__row">
-              <td class="special-table__cell special-table__cell--name">Диаметр:</td>
-              <td class="special-table__cell special-table__cell--value">25 см</td>
-            </tr>
+              <tr class="special-table__row">
+                <td class="special-table__cell special-table__cell--name">Диаметр:</td>
+                <td class="special-table__cell special-table__cell--value">25 см</td>
+              </tr>
 
-            <tr class="special-table__row">
-              <td class="special-table__cell special-table__cell--name">Высота:</td>
-              <td class="special-table__cell special-table__cell--value">15 см</td>
-            </tr>
-          </table>
+              <tr class="special-table__row">
+                <td class="special-table__cell special-table__cell--name">Высота:</td>
+                <td class="special-table__cell special-table__cell--value">15 см</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Секция покупки -->
+          <div class="special__image-wrapper">
+            <img class="special__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки ручной работы">
+          </div>
+          <footer class="special__footer">
+            <p class="special__price">Цена: 990 руб.</p>
+
+            <button class="special__button button" type="button">Заказать</button>
+          </footer>
         </div>
-
-        <!-- Секция покупки -->
-        <div class="special__image-wrapper">
-          <img class="special__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки ручной работы">
-        </div>
-        <footer class="special__footer">
-          <p class="special__price">Цена: 990 руб.</p>
-
-          <button class="special__button button" type="button">Заказать</button>
-        </footer>
       </section>
 
       <!-- О нас -->
