@@ -126,18 +126,23 @@
   }
 }
 
-.main-nav__promo {
+.main-nav__promo-list {
+  @include list-reset;
+
+  order: 5;
+}
+
+.main-nav__promo-link {
   display: none;
-  margin: 0;
 
   @media (min-width: $bp-tablet) {
-    &--delivery {
-      display: inline;
-      order: 5;
-      padding-top: 18px;
+    padding-top: 18px;
 
-      font-weight: 400;
-      font-size: 15px;
+    font-weight: 400;
+    font-size: 15px;
+
+    &--delivery {
+      display: block;
     }
   }
 }
