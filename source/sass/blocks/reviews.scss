@@ -62,8 +62,8 @@
   color: #444444;
 
   @media (min-width: $bp-tablet) {
-    margin-top: 49px;
-    margin-bottom: 55px;
+    margin-top: 50px;
+    margin-bottom: 57px;
 
     font-size: 17px;
     line-height: 30px;
@@ -93,7 +93,7 @@
 
   @media (min-width: $bp-tablet) {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 
     font-size: 18px;
   }
@@ -121,7 +121,7 @@
   @media (min-width: $bp-tablet) {
     position: absolute;
     right: 57px;
-    bottom: 100px;
+    bottom: 85px;
 
     width: 167px;
   }
@@ -141,6 +141,7 @@
 
   @media (min-width: $bp-tablet) {
     border: none;
+    margin: 0;
   }
 }
 
