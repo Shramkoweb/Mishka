@@ -110,3 +110,9 @@
     line-height: 57px;
   }
 }
+
+.page-header__logo {
+  @media (min-width: $bp-tablet) {
+    margin-right: auto;
+  }
+}
