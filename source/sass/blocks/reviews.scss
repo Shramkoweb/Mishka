@@ -87,12 +87,13 @@
 }
 
 .reviews__author-name {
-  margin-bottom: 0;
+  margin-bottom: 2px;
+  display: block;
+
 
   line-height: 24px;
 
   @media (min-width: $bp-tablet) {
-    display: block;
     margin-bottom: 4px;
 
     font-size: 18px;
@@ -133,7 +134,7 @@
 
 .reviews-nav__button {
   width: 50%;
-  margin-top: 33px;
+  margin-top: 31px;
   padding: 10px 20px;
 
   background-color: transparent;
