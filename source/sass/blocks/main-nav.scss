@@ -45,6 +45,7 @@
 
     &--user {
       order: 3;
+      margin-right: 3px;
     }
   }
 }
@@ -58,6 +59,12 @@
     min-height: 60px;
 
     border: none;
+  }
+
+  &--catalog {
+    @media (min-width: $bp-desktop) {
+      border-right: 1px solid #ececec;
+    }
   }
 }
 
