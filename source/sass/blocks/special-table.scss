@@ -7,6 +7,10 @@
   font-size: 15px;
   color: #444444;
 
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 55px;
+  }
+
   @media (min-width: $bp-desktop) {
     margin-bottom: 83px;
   }
@@ -26,4 +30,8 @@
 
 .special-table__cell--name {
   width: 38%;
+
+  @media (min-width: $bp-tablet) {
+    width: 32%;
+  }
 }
