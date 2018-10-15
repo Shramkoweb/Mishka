@@ -10,6 +10,7 @@
 
   @media (min-width: $bp-tablet) {
     font-size: 17px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -20,6 +21,7 @@
 .contacts__tbody {
   @media (min-width: $bp-tablet) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $bp-desktop) {
@@ -59,4 +61,8 @@
   padding-bottom: 4px;
 
   border-bottom: 1px solid #46c1ae;
+
+  @media (min-width: $bp-tablet) {
+    padding-bottom: 2px;
+  }
 }
