@@ -63,7 +63,7 @@
 
 .manufacturing__text {
   margin: 0;
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: 25px;
 
   font-weight: 400;
@@ -72,9 +72,10 @@
   color: #444444;
 
   @media (min-width: $bp-desktop) {
+    margin-bottom: 47px;
+
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 47px;
   }
 }
 
@@ -88,8 +89,9 @@
 
   @media (min-width: $bp-desktop) {
     position: absolute;
-    min-width: 682px;
     left: 0;
+
+    min-width: 682px;
   }
 }
 
@@ -98,12 +100,22 @@
 
   @media (min-width: $bp-desktop) {
     max-width: 350px;
+    padding: 19px 60px 32px;
+
     font-size: 15px;
     line-height: 30px;
-    padding: 19px 60px 32px;
   }
 }
 
 .manufacturing__button {
   width: 100%;
+}
+
+.manufacturing__player-button {
+  position: absolute;
+  top: 128px;
+  left: 73px;
+
+  background: none;
+  border: none;
 }
