@@ -1,5 +1,9 @@
 .manufacturing {
   margin-bottom: 60px;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 63px;
+  }
 }
 
 .manufacturing__inner {
@@ -34,6 +38,17 @@
     background-position: center;
   }
 
+  @media (min-width: $bp-tablet) {
+    padding-left: 105px;
+
+    text-indent: 1px;
+
+    &::before {
+      top: 37px;
+      left: 41px;
+    }
+  }
+
   @media (min-width: $bp-desktop) {
     max-width: 350px;
     padding: 0;
@@ -53,6 +68,9 @@
   line-height: 24px;
 
   @media (min-width: $bp-tablet) {
+    margin: 0;
+    margin-top: 31px;
+
     font-size: 20px;
   }
 
@@ -71,11 +89,16 @@
   line-height: 24px;
   color: #444444;
 
-  @media (min-width: $bp-desktop) {
-    margin-bottom: 47px;
+  @media (min-width: $bp-tablet) {
+    margin-top: 8px;
+    margin-bottom: 37px;
 
     font-size: 15px;
     line-height: 30px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 47px;
   }
 }
 
@@ -97,6 +120,12 @@
 
 .manufacturing-descriprion {
   padding: 13px 33px 32px;
+
+  @media (min-width: $bp-tablet) {
+    padding-right: 41px;
+    padding-bottom: 44px;
+    padding-left: 39px;
+  }
 
   @media (min-width: $bp-desktop) {
     max-width: 350px;

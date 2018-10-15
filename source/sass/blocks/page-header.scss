@@ -46,12 +46,12 @@
   background-color: #fafafa;
 
   @media (min-width: $bp-tablet) {
-    padding-top: 105px;
+    padding-top: 36px;
     padding-bottom: 92px;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-position: bottom center;
+    background-position: 30px bottom;
     background-size: auto 22px;
   }
 
