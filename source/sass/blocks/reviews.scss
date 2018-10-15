@@ -11,6 +11,8 @@
   }
 
   @media (min-width: $bp-desktop) {
+    padding-bottom: 40px;
+
     background-position: 49px 34px;
   }
 }
@@ -100,7 +102,9 @@
   }
 
   @media (min-width: $bp-desktop) {
+    font-weight: 400;
     font-size: 17px;
+    letter-spacing: -1.2px;
   }
 }
 
@@ -112,6 +116,10 @@
   @media (min-width: $bp-tablet) {
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    letter-spacing: -1.6px;
   }
 }
 
@@ -125,10 +133,6 @@
     bottom: 85px;
 
     width: 167px;
-  }
-
-  @media (min-width: $bp-desktop) {
-    top: 311px;
   }
 }
 
