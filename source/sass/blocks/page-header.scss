@@ -6,8 +6,8 @@
   @media (min-width: $bp-tablet) {
     background: linear-gradient(white 88px, #ececec 2px, transparent 90px);
     background-color: #fafafa;
-    background-size: 100% 176px;
     background-repeat: no-repeat;
+    background-size: 100% 176px;
   }
 }
 
@@ -79,12 +79,10 @@
     }
 
     @media (min-width: $bp-desktop) {
-      padding-top: 79px;
+      padding-top: 94px;
       padding-bottom: 359px;
 
       background-image: url("../../img/hero-desktop@1x.jpg");
-      background-position: 50% 38%;
-      background-repeat: no-repeat;
     }
   }
 }
