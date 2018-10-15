@@ -41,6 +41,7 @@
 
     font-size: 43px;
     line-height: 50px;
+    text-indent: -5px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -87,9 +88,8 @@
 }
 
 .reviews__author-name {
-  margin-bottom: 2px;
   display: block;
-
+  margin-bottom: 2px;
 
   line-height: 24px;
 
@@ -141,8 +141,9 @@
   border: 1px solid #ececec;
 
   @media (min-width: $bp-tablet) {
-    border: none;
     margin: 0;
+
+    border: none;
   }
 }
 
