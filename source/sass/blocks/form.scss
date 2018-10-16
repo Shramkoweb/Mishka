@@ -171,6 +171,12 @@
   font-size: 14px;
   line-height: 16px;
   color: #444444;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 0;
+  }
 }
 
 .form-group {
@@ -465,6 +471,7 @@
 
   @media (min-width: $bp-tablet) {
     width: 230px;
+    margin-top: 4px;
   }
 }
 
@@ -499,10 +506,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-  }
-
-  @media (min-width: $bp-tablet) {
-    width: 700px;
     margin: 0 auto;
   }
 }
