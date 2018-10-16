@@ -50,6 +50,7 @@
     @media (min-width: $bp-tablet) {
       flex-direction: row;
       align-items: center;
+      margin-bottom: 25px;
     }
   }
 
@@ -167,6 +168,15 @@
     &--contacts {
       display: flex;
       justify-content: space-between;
+    }
+
+    &--about {
+      padding-top: 47px;
+      padding-bottom: 49px;
+    }
+
+    &--grey {
+      padding-bottom: 30px;
     }
   }
 
@@ -381,7 +391,10 @@
     }
 
     @media (min-width: $bp-tablet) {
+      padding-bottom: 16px;
       padding-left: 15px;
+
+      letter-spacing: 1.3px;
     }
   }
 
