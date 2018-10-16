@@ -9,6 +9,8 @@
   color: #444444;
 
   @media (min-width: $bp-tablet) {
+    margin-bottom: 54px;
+
     font-size: 17px;
   }
 
@@ -20,6 +22,7 @@
 .contacts__tbody {
   @media (min-width: $bp-tablet) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $bp-desktop) {
@@ -52,5 +55,23 @@
   @media (min-width: $bp-tablet) {
     width: auto;
     padding-right: 22px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-right: 24px;
+  }
+}
+
+.contacts-table__link {
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid #46c1ae;
+
+  @media (min-width: $bp-tablet) {
+    padding-bottom: 2px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-bottom: 4px;
   }
 }

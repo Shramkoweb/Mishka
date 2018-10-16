@@ -7,22 +7,24 @@
 
 .features__title {
   margin: 0;
-  margin-top: 34px;
+  margin-top: 33px;
   margin-bottom: 31px;
 
   font-size: 25px;
   line-height: 30px;
 
   @media (min-width: $bp-tablet) {
-    margin-top: 83px;
+    margin-top: 68px;
     margin-bottom: 48px;
 
     font-size: 43px;
     line-height: 50px;
+    text-indent: -5px;
   }
 
   @media (min-width: $bp-desktop) {
-    margin-top: 118px;
+    margin-top: 82px;
+    margin-bottom: 48px;
 
     font-size: 53px;
     line-height: 57px;

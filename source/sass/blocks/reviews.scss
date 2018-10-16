@@ -11,6 +11,8 @@
   }
 
   @media (min-width: $bp-desktop) {
+    padding-bottom: 40px;
+
     background-position: 49px 34px;
   }
 }
@@ -37,10 +39,11 @@
   line-height: 30px;
 
   @media (min-width: $bp-tablet) {
-    margin-top: 103px;
+    margin-top: 104px;
 
     font-size: 43px;
     line-height: 50px;
+    text-indent: -5px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -62,15 +65,15 @@
   color: #444444;
 
   @media (min-width: $bp-tablet) {
-    margin-top: 49px;
-    margin-bottom: 55px;
+    margin-top: 50px;
+    margin-bottom: 57px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $bp-desktop) {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 
     line-height: 30px;
   }
@@ -78,7 +81,6 @@
 
 .reviews__author {
   display: block;
-  margin-bottom: 6px;
 
   font-style: normal;
 
@@ -88,19 +90,21 @@
 }
 
 .reviews__author-name {
-  margin-bottom: 0;
+  display: block;
+  margin-bottom: 2px;
 
   line-height: 24px;
 
   @media (min-width: $bp-tablet) {
-    display: block;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 
     font-size: 18px;
   }
 
   @media (min-width: $bp-desktop) {
+    font-weight: 400;
     font-size: 17px;
+    letter-spacing: -1.2px;
   }
 }
 
@@ -113,6 +117,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $bp-desktop) {
+    letter-spacing: -1.6px;
+  }
 }
 
 .reviews__nav {
@@ -121,26 +129,24 @@
 
   @media (min-width: $bp-tablet) {
     position: absolute;
-    bottom: 100px;
-    right: 57px;
+    right: 7px;
+    bottom: 85px;
 
     width: 167px;
-  }
-
-  @media (min-width: $bp-desktop) {
-    top: 311px;
   }
 }
 
 .reviews-nav__button {
   width: 50%;
-  margin-top: 33px;
+  margin-top: 31px;
   padding: 10px 20px;
 
   background-color: transparent;
   border: 1px solid #ececec;
 
   @media (min-width: $bp-tablet) {
+    margin: 0;
+
     border: none;
   }
 }
@@ -152,7 +158,7 @@
   @media (min-width: $bp-tablet) {
     position: absolute;
     top: 106px;
-    right: 50px;
+    right: 0;
 
     width: 175px;
   }

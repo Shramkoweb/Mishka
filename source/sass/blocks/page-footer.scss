@@ -1,9 +1,5 @@
 .page-footer {
   background-color: #fafafa;
-
-  @media (min-width: $bp-desktop) {
-    padding-bottom: 30px;
-  }
 }
 
 .page-footer__logo-wrapper {
@@ -18,7 +14,7 @@
 .page-footer__inner {
   @media (min-width: $bp-tablet) {
     display: flex;
-    padding: 37px 0 30px;
     align-items: center;
+    padding: 33px 0 41px;
   }
 }

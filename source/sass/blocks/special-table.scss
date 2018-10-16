@@ -1,14 +1,18 @@
 .special-table {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   border-collapse: collapse;
   font-weight: normal;
   font-size: 15px;
   color: #444444;
 
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 55px;
+  }
+
   @media (min-width: $bp-desktop) {
-    margin-bottom: 83px;
+    margin-bottom: 109px;
   }
 }
 
@@ -26,4 +30,8 @@
 
 .special-table__cell--name {
   width: 38%;
+
+  @media (min-width: $bp-tablet) {
+    width: 32%;
+  }
 }

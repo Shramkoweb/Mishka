@@ -1,32 +1,43 @@
 .special {
   position: relative;
+
+  margin-top: 27px;
+  padding-bottom: 36px;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 41px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-top: 61px;
+    padding-bottom: 73px;
+  }
 }
 
 .special__title {
   margin: 0;
-  margin-top: 27px;
 
   font-size: 25px;
   line-height: 30px;
 
   @media (min-width: $bp-tablet) {
-    margin-top: 42px;
-
     font-size: 43px;
     line-height: 50px;
+    text-indent: -4px;
   }
 
   @media (min-width: $bp-desktop) {
     z-index: 1;
 
-    margin-top: 120px;
-
     font-size: 53px;
     line-height: 57px;
+    text-indent: 0;
   }
 }
 
 .special__tag {
+  display: block;
   margin-top: 5px;
 
   color: #63d1bb;
@@ -34,7 +45,6 @@
 
   @media (min-width: $bp-tablet) {
     width: 75px;
-    margin-top: 53px;
     margin-right: 26px;
 
     line-height: 17px;
@@ -42,7 +52,6 @@
   }
 
   @media (min-width: $bp-desktop) {
-    margin-top: 134px;
     margin-right: 50px;
     margin-left: 44px;
   }
@@ -50,8 +59,7 @@
 
 .special__description {
   margin: 0;
-  margin-top: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   font-weight: normal;
   font-size: 15px;
@@ -59,9 +67,9 @@
   color: #444444;
 
   @media (min-width: $bp-tablet) {
-    margin-top: 50px;
-    margin-bottom: 33px;
+    margin-bottom: 34px;
 
+    font-size: 17px;
     line-height: 30px;
   }
 
@@ -72,7 +80,6 @@
 
 .special__price {
   margin: 0;
-  margin-top: 22px;
   margin-bottom: 25px;
 
   font-size: 17px;
@@ -81,7 +88,6 @@
   color: #444444;
 
   @media (min-width: $bp-tablet) {
-    margin-top: 25px;
     margin-bottom: 34px;
 
     font-size: 20px;
@@ -90,7 +96,6 @@
 
 .special__button {
   width: 100%;
-  margin-bottom: 36px;
 }
 
 
@@ -98,17 +103,22 @@
   @media (min-width: $bp-tablet) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $bp-desktop) {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    padding-top: 58px;
   }
 }
 
 .special__info {
+  margin-top: 23px;
+
   @media (min-width: $bp-tablet) {
     width: 300px;
+    margin-top: 49px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -117,6 +127,8 @@
 }
 
 .special__image-wrapper {
+  margin-bottom: 25px;
+
   @media (min-width: $bp-tablet) {
     position: absolute;
     top: 143px;

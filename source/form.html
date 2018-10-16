@@ -108,7 +108,7 @@
           <!-- Блок выбора типа изделия -->
           <div class="container">
             <fieldset class="form-group form-group--type">
-              <legend class="form-group__title">Тип</legend>
+              <legend class="form-group__title form-group__title--type">Тип</legend>
 
               <!-- Первый радио-инпут -->
               <ul class="form__list" role="presentation">
@@ -199,7 +199,7 @@
 
           <div class="container">
             <!-- Блок ФИО -->
-            <fieldset class="form-group">
+            <fieldset class="form-group form-group--about">
               <legend class="form-group__title form-group__title--about">ФИО</legend>
 
               <ul class="form__list form__list--about">
@@ -234,11 +234,13 @@
             <div class="container">
               <!-- Блок телефон -->
               <div class="form-group form-group--contacts">
-                <label class="form-group__title" for="number">
+                <label class="form-group__title form-group__title--contacts" for="number">
                   Тел
                 </label>
 
                 <input class="form-group__input form-group__input--contacts" type="tel" name="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required id="number">
+
+                <img class="form-group__icon" src="img/icon-phone.svg" alt="Иконка телефона">
               </div>
 
               <!-- Блок почты -->
@@ -248,6 +250,8 @@
                 </label>
 
                 <input class="form-group__input form-group__input--contacts" type="email" name="user-mail" placeholder="Ваш Email*" required id="mail">
+
+                <img class="form-group__icon form-group__icon--mail" src="img/icon-mail.svg" alt="Иконка почты">
               </div>
             </div>
           </div>

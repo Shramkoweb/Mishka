@@ -1,5 +1,13 @@
 .manufacturing {
   margin-bottom: 60px;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 102px;
+  }
 }
 
 .manufacturing__inner {
@@ -34,16 +42,27 @@
     background-position: center;
   }
 
+  @media (min-width: $bp-tablet) {
+    padding-left: 105px;
+
+    text-indent: 1px;
+
+    &::before {
+      top: 37px;
+      left: 41px;
+    }
+  }
+
   @media (min-width: $bp-desktop) {
     max-width: 350px;
     padding: 0;
-    padding-top: 94px;
+    padding-top: 93px;
     padding-right: 100px;
     padding-left: 61px;
 
     &::before {
-      top: 47px;
-      left: 62px;
+      top: 44px;
+      left: 63px;
     }
   }
 }
@@ -53,6 +72,9 @@
   line-height: 24px;
 
   @media (min-width: $bp-tablet) {
+    margin: 0;
+    margin-top: 31px;
+
     font-size: 20px;
   }
 
@@ -63,7 +85,7 @@
 
 .manufacturing__text {
   margin: 0;
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: 25px;
 
   font-weight: 400;
@@ -71,14 +93,23 @@
   line-height: 24px;
   color: #444444;
 
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-tablet) {
+    margin-top: 8px;
+    margin-bottom: 37px;
+
     font-size: 15px;
     line-height: 30px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-top: 14px;
     margin-bottom: 47px;
   }
 }
 
 .manufacturing__player-container {
+  position: relative;
+
   border: 1px solid #ececec;
 
   @media (min-width: $bp-tablet) {
@@ -88,22 +119,43 @@
 
   @media (min-width: $bp-desktop) {
     position: absolute;
-    min-width: 682px;
     left: 0;
+
+    min-width: 682px;
   }
 }
 
 .manufacturing-descriprion {
   padding: 13px 33px 32px;
 
+  @media (min-width: $bp-tablet) {
+    padding-right: 41px;
+    padding-bottom: 44px;
+    padding-left: 39px;
+  }
+
   @media (min-width: $bp-desktop) {
     max-width: 350px;
+    padding-top: 19px;
+    padding-right: 57px;
+    padding-bottom: 62px;
+    padding-left: 63px;
+
     font-size: 15px;
     line-height: 30px;
-    padding: 19px 60px 32px;
   }
 }
 
 .manufacturing__button {
   width: 100%;
+}
+
+.manufacturing__player-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background: none;
+  border: none;
+  transform: translate(-50%, -50%);
 }
