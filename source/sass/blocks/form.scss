@@ -125,6 +125,16 @@
   }
 }
 
+.form-group__icon {
+  position: absolute;
+  top: 32px;
+  right: 8px;
+
+  &--mail {
+    right: 5px;
+  }
+}
+
 .form__mark {
   margin-top: 23px;
 
@@ -135,6 +145,8 @@
 }
 
 .form-group {
+  position: relative;
+
   margin: 0;
   margin-top: 33px;
   padding: 0;
@@ -368,6 +380,7 @@
 
   &--contacts {
     width: 100%;
+    padding-right: 40px;
     padding-bottom: 15px;
 
     border-top: none;
