@@ -4,6 +4,10 @@
   @media (min-width: $bp-tablet) {
     margin-bottom: 63px;
   }
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 102px;
+  }
 }
 
 .manufacturing__inner {
@@ -52,13 +56,13 @@
   @media (min-width: $bp-desktop) {
     max-width: 350px;
     padding: 0;
-    padding-top: 94px;
+    padding-top: 93px;
     padding-right: 100px;
     padding-left: 61px;
 
     &::before {
-      top: 47px;
-      left: 62px;
+      top: 44px;
+      left: 63px;
     }
   }
 }
@@ -98,13 +102,15 @@
   }
 
   @media (min-width: $bp-desktop) {
+    margin-top: 14px;
     margin-bottom: 47px;
   }
 }
 
 .manufacturing__player-container {
-  border: 1px solid #ececec;
   position: relative;
+
+  border: 1px solid #ececec;
 
   @media (min-width: $bp-tablet) {
     order: -1;
@@ -130,7 +136,10 @@
 
   @media (min-width: $bp-desktop) {
     max-width: 350px;
-    padding: 19px 60px 32px;
+    padding-top: 19px;
+    padding-right: 57px;
+    padding-bottom: 62px;
+    padding-left: 63px;
 
     font-size: 15px;
     line-height: 30px;
