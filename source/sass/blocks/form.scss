@@ -94,6 +94,12 @@
     }
   }
 
+  &--type {
+    @media (min-width: $bp-tablet) {
+      margin-top: 25px;
+    }
+  }
+
   @media (min-width: $bp-desktop) {
     width: 175px;
 
