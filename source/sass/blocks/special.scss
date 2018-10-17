@@ -131,8 +131,12 @@
 
   @media (min-width: $bp-tablet) {
     position: absolute;
-    top: 143px;
+    top: 107px;
     left: 50%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    top: 5px;
   }
 }
 
