@@ -81,6 +81,11 @@
       background-image: url("../../img/hero-tablet@1x.jpg");
       background-position: 50% -60px;
       background-size: auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/hero-tablet@2x.jpg");
+        background-size: 1150px 746px;
+      }
     }
 
     @media (min-width: $bp-desktop) {
@@ -88,6 +93,11 @@
       padding-bottom: 359px;
 
       background-image: url("../../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/hero-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 }
