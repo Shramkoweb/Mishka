@@ -37,7 +37,11 @@
           <div class="page-header__logo-wrapper">
             <!-- Логотип -->
             <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+              </picture>
             </a>
           </div>
 
@@ -102,7 +106,11 @@
           <ul class="catalog__list">
             <li class="catalog__item catalog-item">
               <a class="catalog-item__link catalog-item__link--image" href="#">
-                <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+                </picture>
               </a>
 
               <div class="catalog-item__info">
@@ -123,7 +131,11 @@
 
             <li class="catalog__item catalog-item">
               <a class="catalog-item__link catalog-item__link--image" href="#">
-                <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
+                </picture>
               </a>
 
               <div class="catalog-item__info">
@@ -144,7 +156,11 @@
 
             <li class="catalog__item catalog-item">
               <a class="catalog-item__link catalog-item__link--image" href="#">
-                <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+                </picture>
               </a>
               <div class="catalog-item__info">
                 <h3 class="catalog-item__title">
@@ -174,7 +190,11 @@
             </div>
 
             <div class="manufacturing__player-container">
-              <img class="manufacturing__image" src="img/video-mobile@1x.jpg" alt="Как мы производим наши товары">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="manufacturing__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Как мы производим наши товары">
+              </picture>
 
               <button class="manufacturing__player-button">
                 <span class="visually-hidden">Воспроизвести видео</span>
@@ -183,7 +203,7 @@
               </button>
             </div>
 
-            <div class="manufacturing-descriprion">
+            <div class="manufacturing__descriprion">
               <p class="manufacturing__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
                 том,
                 как появляются наши товары.</p>

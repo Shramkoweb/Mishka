@@ -26,6 +26,7 @@
 @import "blocks/features-list.scss";
 /* Отзывы */
 @import "blocks/reviews.scss";
+@import "blocks/reviews-nav.scss";
 /* Контакты */
 @import "blocks/contacts.scss";
 @import "blocks/contacts-table.scss";
@@ -37,8 +38,10 @@
 @import "blocks/copyright.scss";
 /* Каталог */
 @import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
 /* Производство */
 @import "blocks/manufacturing.scss";
 /* Вязание на заказ */
 @import "blocks/knitting.scss";
 @import "blocks/form.scss";
+@import "blocks/form-group.scss";

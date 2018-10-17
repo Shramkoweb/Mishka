@@ -5,24 +5,11 @@
 
   @media (min-width: $bp-tablet) {
     margin-bottom: 57px;
-
-    &::before {
-      content: url("../img/icon-flag.svg");
-      position: absolute;
-      top: 56px;
-      right: 50px;
-
-      width: 50px;
-      height: 85px;
-
-      @media (min-width: $bp-desktop) {
-        top: 155px;
-        left: 113px;
-      }
-    }
   }
 
   @media (min-width: $bp-desktop) {
+    max-width: 1150px;
+    margin: auto;
     margin-bottom: 104px;
   }
 }
@@ -43,6 +30,16 @@
     font-size: 43px;
     line-height: 50px;
     text-indent: -5px;
+
+    &::before {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      top: 56px;
+      right: -5px;
+
+      width: 50px;
+      height: 85px;
+    }
   }
 
   @media (min-width: $bp-desktop) {
@@ -52,6 +49,11 @@
 
     font-size: 53px;
     line-height: 57px;
+
+    &::before {
+      top: 157px;
+      left: 68px;
+    }
   }
 }
 
@@ -64,8 +66,8 @@
 
   @media (min-width: $bp-desktop) {
     position: absolute;
-    top: 94px;
-    right: 43px;
+    top: 95px;
+    right: 51px;
   }
 }
 

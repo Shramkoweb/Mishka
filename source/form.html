@@ -36,8 +36,12 @@
           <div class="page-header__logo-wrapper">
             <!-- Логотип -->
             <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
-            </a>
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
+                  </picture>
+              </a>
           </div>
 
           <ul class="main-nav__list">

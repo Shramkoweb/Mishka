@@ -24,4 +24,9 @@
 
     background-size: auto 23px;
   }
+
+  @media (min-width: 1200px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
