@@ -190,7 +190,11 @@
             </div>
 
             <div class="manufacturing__player-container">
-              <img class="manufacturing__image" src="img/video-mobile@1x.jpg" alt="Как мы производим наши товары">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="manufacturing__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Как мы производим наши товары">
+              </picture>
 
               <button class="manufacturing__player-button">
                 <span class="visually-hidden">Воспроизвести видео</span>
