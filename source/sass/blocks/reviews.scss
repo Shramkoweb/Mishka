@@ -133,34 +133,6 @@
   }
 }
 
-.reviews__nav {
-  display: flex;
-  margin-bottom: 38px;
-
-  @media (min-width: $bp-tablet) {
-    position: absolute;
-    right: 7px;
-    bottom: 85px;
-
-    width: 167px;
-  }
-}
-
-.reviews-nav__button {
-  width: 50%;
-  margin-top: 31px;
-  padding: 10px 20px;
-
-  background-color: transparent;
-  border: 1px solid #ececec;
-
-  @media (min-width: $bp-tablet) {
-    margin: 0;
-
-    border: none;
-  }
-}
-
 .reviews__write {
   width: 100%;
   margin-bottom: 45px;
