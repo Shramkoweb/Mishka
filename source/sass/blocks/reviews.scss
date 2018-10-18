@@ -151,3 +151,13 @@
     top: 113px;
   }
 }
+
+.reviews-nav__arrow {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
