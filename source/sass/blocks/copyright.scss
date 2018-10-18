@@ -11,7 +11,7 @@
   @media (min-width: $bp-tablet) {
     margin-left: auto;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 13px;
   }
 }
 
@@ -27,7 +27,8 @@
 }
 
 .copyright__link {
-  margin-top: 7px;
+  display: flex;
+  align-items: center;
 
   &:active {
     opacity: 0.3;
