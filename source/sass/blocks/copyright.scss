@@ -28,4 +28,16 @@
 
 .copyright__link {
   margin-top: 7px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
 }
