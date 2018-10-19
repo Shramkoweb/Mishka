@@ -169,24 +169,6 @@
   }
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 5%;
-  right: 10%;
-
-  width: 20px;
-  height: 14px;
-  margin: 0;
-  padding: 0;
-
-  background: transparent;
-  border: none;
-
-  @media (min-width: $bp-tablet) {
-    display: none;
-  }
-}
-
 .main-nav__promo-list {
   display: none;
 
