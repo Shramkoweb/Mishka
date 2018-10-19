@@ -59,6 +59,14 @@
 
   border: 1px solid #ececec;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $bp-tablet) {
     flex-direction: row;
     min-height: 333px;
@@ -134,5 +142,19 @@
 .catalog-item__cart-link {
   @media (min-width: $bp-tablet) {
     margin-right: 5px;
+  }
+}
+
+.catalog-item__icon {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

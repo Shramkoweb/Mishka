@@ -17,10 +17,21 @@
     margin-left: 160px;
     padding: 0;
     padding-top: 14px;
+
     border: none;
   }
 
   @media (min-width: $bp-desktop) {
     margin-left: 350px;
+  }
+}
+
+.socials__icon {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

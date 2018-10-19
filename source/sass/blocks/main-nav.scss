@@ -130,6 +130,18 @@
   top: 31px;
   left: 32px;
 
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $bp-tablet) {
     top: 37px;
   }
@@ -139,6 +151,18 @@
   position: absolute;
   top: 29px;
   left: 31px;
+
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $bp-tablet) {
     top: 2px;
