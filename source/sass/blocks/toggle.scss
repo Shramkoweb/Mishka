@@ -1,7 +1,7 @@
 .toggle {
   position: absolute;
-  top: 8%;
-  right: 10%;
+  top: 32px;
+  right: 32px;
   z-index: 2;
 
   width: 20px;
@@ -13,17 +13,26 @@
   border: none;
   cursor: pointer;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: 8%;
-    right: -1px;
+    top: 6px;
+    right: -6px;
 
-    width: 20px;
+    width: 28px;
     height: 2px;
 
     background-color: #000000;
-    box-shadow: 0 5px 0 0  #000000, 0 11px 0 0  #000000;
+  }
+
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 
   @media (min-width: $bp-tablet) {
