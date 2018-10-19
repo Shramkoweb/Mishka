@@ -1,6 +1,7 @@
 .main-nav {
-  line-height: 24px;
   position: relative;
+
+  line-height: 24px;
 
   @media (min-width: $bp-tablet) {
     display: flex;
@@ -234,4 +235,38 @@
       letter-spacing: 0.2px;
     }
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  right: -1px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 5px 0 0  #000000, 0 11px 0 0  #000000;
+  transform: none;
+}
+
+.main-nav--closed .main-nav__toggle::after {
+  content: none;
+}
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: $bp-tablet - 1) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__list--user {
+  @media (max-width: $bp-tablet - 1) {
+    display: none;
+  }
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
 }
