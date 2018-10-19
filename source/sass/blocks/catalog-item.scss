@@ -136,3 +136,17 @@
     margin-right: 5px;
   }
 }
+
+.catalog-item__icon {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
