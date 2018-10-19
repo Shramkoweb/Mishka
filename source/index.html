@@ -68,7 +68,7 @@
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--cart" href="#">
                 Корзина: пока пуста
-                
+
                 <svg class="main-nav__cart-icon" width="21" height="18">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -152,6 +152,9 @@
           <!-- Секция покупки -->
           <div class="special__image-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="special__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки ручной работы">
