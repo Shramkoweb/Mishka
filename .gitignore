@@ -9,6 +9,7 @@
 node_modules/
 npm-debug.*
 source/css/*.css
+build/
 Thumbs.db
 source/img/page-desktop.jpg
 source/img/page-mobile.jpg
