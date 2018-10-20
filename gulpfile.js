@@ -79,6 +79,8 @@ gulp.task("sprite", function () {
     "source/img/icon-insta.svg",
     "source/img/icon-twitter.svg",
     "source/img/icon-right-arrow.svg",
+    "source/img/icon-mail.svg",
+    "source/img/icon-phone.svg",
     "source/img/icon-left-arrow.svg",
     "source/img/logo-footer.svg",
     "source/img/htmlacademy.svg",
