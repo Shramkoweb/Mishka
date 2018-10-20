@@ -10,6 +10,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -54,8 +55,13 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
+  return gulp.src([
+    "source/img/video*.jpg",
+    "source/img/triple*.jpg",
+    "source/img/photo*.jpg",
+    "source/img/map*.jpg"
+  ])
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img/test"));
 });
 gulp.task("start", gulp.series("css", "server"));
