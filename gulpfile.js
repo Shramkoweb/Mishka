@@ -64,4 +64,24 @@ gulp.task("webp", function () {
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img/test"));
 });
+
+gulp.task("sprite", function () {
+  return gulp.src([
+    "source/img/icon-search.svg",
+    "source/img/icon-cart.svg",
+    "source/img/icon-fb.svg",
+    "source/img/icon-insta.svg",
+    "source/img/icon-twitter.svg",
+    "source/img/icon-right-arrow.svg",
+    "source/img/icon-left-arrow.svg",
+    "source/img/logo-footer.svg",
+    "source/img/htmlacademy.svg",
+  ])
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img/test"));
+});
 gulp.task("start", gulp.series("css", "server"));
