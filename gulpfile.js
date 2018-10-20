@@ -44,13 +44,11 @@ gulp.task("images", function () {
       imagemin.optipng({ optimizationLevel: 7 }),
       imagemin.jpegtran({ progressive: true }),
       imagemin.gifsicle({ interlaced: true }),
-      imagemin.svgo({
-        plugins: [
-          { cleanupIDs: false }
-        ]
-      })
-    ]))
-    .pipe(gulp.dest("source/img/test"));
+      imagemin.svgo()
+    ], {
+      verbose: true
+    }))
+    .pipe(gulp.dest("source/img"));
 
 });
 gulp.task("start", gulp.series("css", "server"));
