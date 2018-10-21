@@ -213,6 +213,14 @@
     font-weight: 400;
     font-size: 15px;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     &--delivery {
       display: block;
     }
