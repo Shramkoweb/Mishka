@@ -157,12 +157,6 @@
 
   opacity: 0.3;
 
-  &:hover {
-    opacity: 1;
-
-    fill: #62d1ba;
-  }
-
   @media (min-width: $bp-tablet) {
     top: 61px;
     right: 26px;
@@ -406,6 +400,12 @@
       opacity: 1;
 
       fill: #63d1bb;
+    }
+
+    &:hover + .form-group__icon {
+      opacity: 1;
+
+      fill: #62d1ba;
     }
 
     @media (min-width: $bp-tablet) {
