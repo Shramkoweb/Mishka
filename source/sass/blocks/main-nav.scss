@@ -83,7 +83,19 @@
   }
 
   &:active {
-    color: $link-active;
+    opacity: 0.3;
+  }
+
+  &--search:hover .main-nav__search-icon {
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+
+  &--cart:hover .main-nav__cart-icon {
+    opacity: 1;
+
+    fill: #63d1bb;
   }
 
   @media (min-width: $bp-tablet) {
@@ -134,12 +146,6 @@
 
   opacity: 0.2;
 
-  &:hover {
-    opacity: 1;
-
-    fill: #63d1bb;
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -155,16 +161,6 @@
   left: 31px;
 
   opacity: 0.2;
-
-  &:hover {
-    opacity: 1;
-
-    fill: #63d1bb;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 
   @media (min-width: $bp-tablet) {
     top: 2px;
