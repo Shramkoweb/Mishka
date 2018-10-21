@@ -43,7 +43,7 @@ gulp.task("server", function () {
 gulp.task("refresh", function (done) {
   server.reload();
   done();
- });
+});
 
 
 gulp.task("images", function () {
@@ -110,8 +110,8 @@ gulp.task("clean", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-  .pipe(gulp.dest("build"));
- });
+    .pipe(gulp.dest("build"));
+});
 
 gulp.task("build", gulp.series(
   "clean",
