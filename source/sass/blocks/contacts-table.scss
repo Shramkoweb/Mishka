@@ -67,6 +67,15 @@
 
   border-bottom: 1px solid #46c1ae;
 
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
+
   @media (min-width: $bp-tablet) {
     padding-bottom: 2px;
   }
