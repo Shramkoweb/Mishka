@@ -1,26 +1,10 @@
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-
-  display: none;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
-  padding: 30px;
-
-  background-color: #ffffff;
-  border: 1px solid #c6c6c6;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  transform: translate(-50%, -50%);
-
-  &--opened {
+  &--opened .modal__box {
     display: flex;
   }
 
-  @media (min-width: $bp-tablet) {
-    width: 566px;
+  &--opened .modal__fade {
+    top: 0;
   }
 }
 
@@ -130,4 +114,35 @@
 .modal__inner {
   display: flex;
   justify-content: space-between;
+}
+
+.modal__fade {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal__box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $bp-tablet) {
+    width: 566px;
+  }
 }
