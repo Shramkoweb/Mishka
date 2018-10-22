@@ -1,8 +1,7 @@
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
-var special = document.querySelector(".special");
-var modal = document.querySelector(".modal");
-var fade = document.querySelector(".modal__fade");
+
+//Открытие меню в мобильно версии.
 
 navMain.classList.remove("main-nav--no-js");
 navMain.classList.add("main-nav--closed");
@@ -11,10 +10,23 @@ navToggle.addEventListener("click", function () {
   navMain.classList.toggle("main-nav--closed");
 })
 
-special.addEventListener("click", function () {
-  modal.classList.add("modal--opened");
-})
+//Открытие модального окна.
 
-fade.addEventListener("click", function () {
-  modal.classList.remove("modal--opened");
-})
+var link = document.querySelectorAll(".modal__button");
+
+if (link.length > 0) {
+  var modal = document.querySelector(".modal");
+  var overlay = document.querySelector(".modal__fade");
+
+  for (var i = 0; i < link.length; i++) {
+    link[i].addEventListener("click", function () {
+      modal.classList.add("modal--opened");
+    })
+  };
+
+  overlay.addEventListener("click", function () {
+    modal.classList.remove("modal--opened");
+  })
+};
+
+
