@@ -283,31 +283,36 @@
 
     <!-- Модальное окно -->
     <section class="modal-cart modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
 
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="modal__form-group">
-          <legend class="modal__legend">Выберите размер</legend>
+          <legend class="modal__legend">Выберите размер:</legend>
+          <div class="modal__inner">
 
-          <label class="modal__label">
-            S
+            <div class="modal__size-box">
+              <input class="modal__input" type="radio" name="size" value="S" id="s">
 
-            <input class="modal__input" type="radio" name="size" value="S">
-          </label>
+              <label class="modal__label" for="s">
+                S
+              </label>
+            </div>
 
+            <div class="modal__size-box">
+              <input class="modal__input" type="radio" name="size" value="M" id="m">
+              <label class="modal__label" for="m">
+                M
+              </label>
+            </div>
 
-          <label class="modal__label">
-            M
+            <div class="modal__size-box">
+              <input class="modal__input" type="radio" name="size" value="L" id="l">
 
-            <input class="modal__input" type="radio" name="size" value="M">
-          </label>
-
-
-          <label class="modal__label">
-            L
-
-            <input class="modal__input" type="radio" name="size" value="L">
-          </label>
+              <label class="modal__label" for="l">
+                L
+              </label>
+            </div>
+          </div>
 
         </fieldset>
 
