@@ -320,45 +320,47 @@
 
     <!-- Модальное окно -->
     <section class="modal-cart modal">
-      <div class="modal__fade"></div>
-      <div class="modal__box">
-        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <div class="modal__fade"></div>
 
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="modal__form-group">
-            <legend class="modal__legend">Выберите размер:</legend>
-            <div class="modal__inner">
+        <div class="modal__box">
+          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
 
-              <div class="modal__size-box">
-                <input class="modal__input" type="radio" name="size" value="S" id="s">
+          <form class="modal__form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="modal__form-group">
+              <legend class="modal__legend">Выберите размер:</legend>
 
-                <label class="modal__label" for="s">
-                  S
-                </label>
+              <div class="modal__inner">
+
+                <div class="modal__size-box">
+                  <input class="modal__input" type="radio" name="size" value="S" id="s">
+
+                  <label class="modal__label" for="s">
+                    S
+                  </label>
+                </div>
+
+                <div class="modal__size-box">
+                  <input class="modal__input" type="radio" name="size" value="M" id="m">
+
+                  <label class="modal__label" for="m">
+                    M
+                  </label>
+                </div>
+
+                <div class="modal__size-box">
+                  <input class="modal__input" type="radio" name="size" value="L" id="l">
+
+                  <label class="modal__label" for="l">
+                    L
+                  </label>
+                </div>
               </div>
+            </fieldset>
 
-              <div class="modal__size-box">
-                <input class="modal__input" type="radio" name="size" value="M" id="m">
-                <label class="modal__label" for="m">
-                  M
-                </label>
-              </div>
-
-              <div class="modal__size-box">
-                <input class="modal__input" type="radio" name="size" value="L" id="l">
-
-                <label class="modal__label" for="l">
-                  L
-                </label>
-              </div>
-            </div>
-
-          </fieldset>
-
-          <button class="modal__submit button">Добавить</button>
-        </form>
-      </div>
-    </section>
+            <button class="modal__submit button">Добавить</button>
+          </form>
+        </div>
+      </section>
     <script src="js/app.js"></script>
     <script src="js/svg4everybody.js"></script>
     <script>svg4everybody();</script>
