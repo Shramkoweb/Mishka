@@ -28,5 +28,3 @@ if (link.length > 0) {
     modal.classList.remove("modal--opened");
   })
 };
-
-
