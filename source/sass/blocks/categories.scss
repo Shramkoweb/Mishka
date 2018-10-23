@@ -40,6 +40,10 @@
   @include list-reset;
   position: relative;
 
+  @media (max-width: $bp-tablet) {
+    background: linear-gradient(#63d1bb 50%, #56c3b2 50%);
+  }
+
   @media (min-width: $bp-tablet) {
     display: flex;
     width: 668px;
