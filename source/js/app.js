@@ -12,7 +12,7 @@ navToggle.addEventListener("click", function () {
 
 //Открытие модального окна.
 
-var link = document.querySelectorAll(".modal__button");
+var link = document.querySelectorAll(".js-modal");
 
 if (link.length > 0) {
   var modal = document.querySelector(".modal");
