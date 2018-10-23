@@ -124,7 +124,7 @@
   }
 }
 
-.page-header__logo {
+.page-header__logo[href] {
   img {
     pointer-events: none;
   }
