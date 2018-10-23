@@ -125,12 +125,20 @@
 }
 
 .page-header__logo {
+  img {
+    pointer-events: none;
+  }
+
   &:hover {
-    opacity: 0.6;
+    img {
+      opacity: 0.6;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    img {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $bp-tablet) {
