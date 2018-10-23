@@ -146,6 +146,8 @@
 
   opacity: 0.2;
 
+  pointer-events: none;
+
   &:active {
     opacity: 0.3;
   }
@@ -161,6 +163,8 @@
   left: 31px;
 
   opacity: 0.2;
+
+  pointer-events: none;
 
   @media (min-width: $bp-tablet) {
     top: 2px;
