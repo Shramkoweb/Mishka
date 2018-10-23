@@ -78,11 +78,11 @@
   padding-bottom: 27px;
   padding-left: 76px;
 
-  &:hover {
+  &:hover[href] {
     color: $link-hover;
   }
 
-  &:active {
+  &:active[href] {
     opacity: 0.3;
   }
 
