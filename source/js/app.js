@@ -34,12 +34,12 @@ if (link.length > 0) {
 function initMap() {
   var map = new google.maps.Map(document.querySelector(".contacts__map-wrapper"), {
     zoom: 16,
-    center: { lat: 59.936705, lng: 30.321744 }
+    center: { lat: 59.938731, lng: 30.323081 }
   });
 
   var image = "img/icon-map-pin.svg";
   var beachMarker = new google.maps.Marker({
-    position: { lat: 59.936259, lng: 30.321744 },
+    position: { lat: 59.938731, lng: 30.323081 },
     map: map,
     icon: image
   });
