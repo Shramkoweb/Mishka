@@ -124,18 +124,18 @@
   }
 }
 
-.page-header__logo[href] {
+.page-header__logo {
   img {
     pointer-events: none;
   }
 
-  &:hover {
+  &:hover[href] {
     img {
       opacity: 0.6;
     }
   }
 
-  &:active {
+  &:active[href] {
     img {
       opacity: 0.3;
     }
