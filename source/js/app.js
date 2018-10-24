@@ -32,7 +32,7 @@ if (link.length > 0) {
 // Карта
 
 function initMap() {
-  var map = new google.maps.Map(document.querySelector(".contacts__map-wrapper"), {
+  var map = new google.maps.Map(document.querySelector(".contacts__map"), {
     zoom: 16,
     center: { lat: 59.938731, lng: 30.323081 }
   });
