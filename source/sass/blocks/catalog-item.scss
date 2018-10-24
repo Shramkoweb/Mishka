@@ -59,11 +59,11 @@
 
   border: 1px solid #ececec;
 
-  &:hover {
+  &:hover .catalog-item__info {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:active .catalog-item__info {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 

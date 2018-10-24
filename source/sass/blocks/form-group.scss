@@ -154,6 +154,9 @@
   position: absolute;
   top: 32px;
   right: 8px;
+  pointer-events: none;
+
+  opacity: 0.3;
 
   @media (min-width: $bp-tablet) {
     top: 61px;
@@ -323,6 +326,10 @@
     &:active + .form-group__label--radio::before {
       border-color: rgba(68, 68, 68, 0.3);
     }
+
+    &:focus + .form-group__label--radio::before {
+      border-color: #62d1ba;
+    }
   }
 
   &--checkbox {
@@ -344,6 +351,10 @@
 
     &:active + .form-group__label--checkbox::before {
       border-color: rgba(68, 68, 68, 0.3);
+    }
+
+    &:focus + .form-group__label--checkbox::before {
+      border-color: #62d1ba;
     }
   }
 
@@ -392,6 +403,18 @@
 
     &:focus {
       border-color: #62d1ba;
+    }
+
+    &:focus + .form-group__icon {
+      opacity: 1;
+
+      fill: #63d1bb;
+    }
+
+    &:hover + .form-group__icon {
+      opacity: 1;
+
+      fill: #62d1ba;
     }
 
     @media (min-width: $bp-tablet) {

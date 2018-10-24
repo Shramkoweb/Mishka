@@ -5,26 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Мишка - форма</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="pixel-glass/styles.css" rel="stylesheet">
-    <script src="pixel-glass/script.js"></script>
-    <style>
-      html {
-        background: url("img/mishka-form-mobile.jpg") 50% 0 no-repeat;
-      }
-
-      @media (min-width: 768px) {
-        html {
-          background-image: url("img/mishka-form-tablet.jpg");
-        }
-      }
-
-      @media (min-width: 1150px) {
-        html {
-          background-image: url("img/mishka-form-desktop.jpg");
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
 
   <body class="page">
@@ -32,7 +13,7 @@
     <header class="page-header">
       <div class="page-header__inner">
         <!-- Навигация по сайту -->
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--no-js">
           <div class="page-header__logo-wrapper">
             <!-- Логотип -->
             <a class="page-header__logo" href="index.html">
@@ -76,10 +57,8 @@
             </li>
           </ul>
 
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-
-            <span><img src="img/menu.png" alt="Открыть меню"></span>
           </button>
 
           <ul class="main-nav__promo-list">
@@ -250,7 +229,9 @@
 
                 <input class="form-group__input form-group__input--contacts" type="tel" name="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required id="number">
 
-                <img class="form-group__icon" src="img/icon-phone.svg" alt="Иконка телефона">
+                <svg class="form-group__icon" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </div>
 
               <!-- Блок почты -->
@@ -261,7 +242,9 @@
 
                 <input class="form-group__input form-group__input--contacts" type="email" name="user-mail" placeholder="Ваш Email*" required id="mail">
 
-                <img class="form-group__icon form-group__icon--mail" src="img/icon-mail.svg" alt="Иконка почты">
+                <svg class="form-group__icon form-group__icon--mail" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </div>
             </div>
           </div>
@@ -293,7 +276,7 @@
           <div class="page-footer__logo-wrapper">
             <a class="page-footer__logo" href="#">
               <svg class="page-footer__icon" width="102" height="34">
-                <use xlink:href="img/sprite.svg#footer-logo"></use>
+                <use xlink:href="img/sprite.svg#logo-footer"></use>
               </svg>
             </a>
           </div>
@@ -304,7 +287,7 @@
                 <span class="visually-hidden">Instagram</span>
 
                 <svg class="socials__icon" width="22" height="21">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -314,7 +297,7 @@
                 <span class="visually-hidden">Facebook</span>
 
                 <svg class="socials__icon" width="15" height="29">
-                  <use xlink:href="img/sprite.svg#fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -324,7 +307,7 @@
                 <span class="visually-hidden">Twitter</span>
 
                 <svg class="socials__icon" width="24" height="20">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -336,12 +319,16 @@
               <span class="copyright__text">Разработано</span>
 
               <svg class="copyright__icon" width="27" height="34">
-                <use xlink:href="img/sprite.svg#academy"></use>
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

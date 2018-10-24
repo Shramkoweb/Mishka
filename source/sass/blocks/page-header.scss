@@ -51,8 +51,8 @@
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-position: 30px bottom;
-    background-size: auto 22px;
+    background-position: 0 bottom;
+    background-size: auto 22.7px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -125,12 +125,20 @@
 }
 
 .page-header__logo {
-  &:hover {
-    opacity: 0.6;
+  img {
+    pointer-events: none;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:hover[href] {
+    img {
+      opacity: 0.6;
+    }
+  }
+
+  &:active[href] {
+    img {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $bp-tablet) {

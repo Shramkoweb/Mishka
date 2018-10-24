@@ -5,26 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="pixel-glass/styles.css" rel="stylesheet">
-    <script src="pixel-glass/script.js"></script>
-    <style>
-      html {
-        background: url("img/mishka-index-mobile.jpg") 50% 0 no-repeat;
-      }
-
-      @media (min-width: 768px) {
-        html {
-          background-image: url("img/mishka-index-tablet.jpg");
-        }
-      }
-
-      @media (min-width: 1150px) {
-        html {
-          background-image: url("img/mishka-index-desktop.jpg");
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
 
   <body class="page">
@@ -32,7 +13,7 @@
     <header class="page-header">
       <div class="page-header__inner">
         <!-- Навигация по сайту -->
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--no-js">
           <div class="page-header__logo-wrapper">
             <!-- Логотип -->
             <a class="page-header__logo">
@@ -76,10 +57,8 @@
             </li>
           </ul>
 
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-
-            <span><img src="img/menu.png" alt="Открыть меню"></span>
           </button>
 
           <ul class="main-nav__promo-list">
@@ -163,7 +142,7 @@
           <footer class="special__footer">
             <p class="special__price">Цена: 990 руб.</p>
 
-            <button class="special__button button" type="button">Заказать</button>
+            <button class="special__button button js-modal" type="button">Заказать</button>
           </footer>
         </div>
       </section>
@@ -227,7 +206,7 @@
               <span class="visually-hidden">Назад</span>
 
               <svg class="reviews-nav__arrow" width="50" height="26.003">
-                <use xlink:href="img/sprite.svg#left-arrow"></use>
+                <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
               </svg>
             </button>
 
@@ -235,7 +214,7 @@
               <span class="visually-hidden">Вперед</span>
 
               <svg class="reviews-nav__arrow" width="50" height="26.003">
-                <use xlink:href="img/sprite.svg#right-arrow"></use>
+                <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
               </svg>
             </button>
           </div>
@@ -268,14 +247,16 @@
 
         <!-- Обертка карты -->
         <div class="contacts__map-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта проезда">
-          </picture>
+          <div class="contacts__map">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта проезда">
+            </picture>
+          </div>
         </div>
         <button class="contacts__button button" type="button">Напишите нам</button>
       </section>
@@ -288,7 +269,7 @@
           <div class="page-footer__logo-wrapper">
             <a class="page-footer__logo" href="#">
               <svg class="page-footer__icon" width="102" height="34">
-                <use xlink:href="img/sprite.svg#footer-logo"></use>
+                <use xlink:href="img/sprite.svg#logo-footer"></use>
               </svg>
             </a>
           </div>
@@ -299,7 +280,7 @@
                 <span class="visually-hidden">Instagram</span>
 
                 <svg class="socials__icon" width="22" height="21">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -309,7 +290,7 @@
                 <span class="visually-hidden">Facebook</span>
 
                 <svg class="socials__icon" width="15" height="29">
-                  <use xlink:href="img/sprite.svg#fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -319,7 +300,7 @@
                 <span class="visually-hidden">Twitter</span>
 
                 <svg class="socials__icon" width="24" height="20">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -331,7 +312,7 @@
               <span class="copyright__text">Разработано</span>
 
               <svg class="copyright__icon" width="27" height="34">
-                <use xlink:href="img/sprite.svg#academy"></use>
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
           </div>
@@ -341,36 +322,51 @@
 
     <!-- Модальное окно -->
     <section class="modal-cart modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
+      <div class="modal__fade"></div>
 
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="modal__form-group">
-          <legend class="modal__legend">Выберите размер</legend>
+      <div class="modal__box">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
 
-          <label class="modal__label">
-            S
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="modal__form-group">
+            <legend class="modal__legend">Выберите размер:</legend>
 
-            <input class="modal__input" type="radio" name="size" value="S">
-          </label>
+            <div class="modal__inner">
 
+              <div class="modal__size-box">
+                <input class="modal__input" type="radio" name="size" value="S" id="s" checked>
 
-          <label class="modal__label">
-            M
+                <label class="modal__label" for="s">
+                  S
+                </label>
+              </div>
 
-            <input class="modal__input" type="radio" name="size" value="M">
-          </label>
+              <div class="modal__size-box">
+                <input class="modal__input" type="radio" name="size" value="M" id="m">
 
+                <label class="modal__label" for="m">
+                  M
+                </label>
+              </div>
 
-          <label class="modal__label">
-            L
+              <div class="modal__size-box">
+                <input class="modal__input" type="radio" name="size" value="L" id="l">
 
-            <input class="modal__input" type="radio" name="size" value="L">
-          </label>
+                <label class="modal__label" for="l">
+                  L
+                </label>
+              </div>
+            </div>
+          </fieldset>
 
-        </fieldset>
-
-        <button class="modal__submit button">Добавить</button>
-      </form>
+          <button class="modal__submit button">Добавить</button>
+        </form>
+      </div>
     </section>
+    <script src="js/app.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/picturefill.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_DsLrM13KImAxVk4_j3qoz49DQhDNknI&callback=initMap" async defer></script>
   </body>
 </html>

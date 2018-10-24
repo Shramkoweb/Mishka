@@ -5,27 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Мишка - каталог</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="pixel-glass/styles.css" rel="stylesheet">
-    <script src="pixel-glass/script.js"></script>
-    <style>
-      html {
-        background: url("img/page-mobile.jpg") 50% 0 no-repeat;
-      }
-
-      @media (min-width: 768px) {
-        html {
-          background-image: url("img/page-tablet.jpg");
-        }
-      }
-
-      @media (min-width: 1150px) {
-        html {
-          background-image: url("img/page-desktop.jpg");
-        }
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
 
   <body class="page">
@@ -33,7 +13,7 @@
     <header class="page-header">
       <div class="page-header__inner">
         <!-- Навигация по сайту -->
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--no-js">
           <div class="page-header__logo-wrapper">
             <!-- Логотип -->
             <a class="page-header__logo" href="index.html">
@@ -77,10 +57,8 @@
             </li>
           </ul>
 
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-
-            <span><img src="img/menu.png" alt="Открыть меню"></span>
           </button>
 
           <ul class="main-nav__promo-list">
@@ -133,7 +111,7 @@
 
                 <footer class="catalog-item__footer">
                   <span class="catalog-item__price">1 200 руб.</span>
-                  <a class="catalog-item__cart-link" href="#">
+                  <a class="catalog-item__cart-link js-modal" href="#">
                     <svg class="catalog-item__icon" width="21" height="18">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -165,7 +143,7 @@
 
                 <footer class="catalog-item__footer">
                   <span class="catalog-item__price">690 руб.</span>
-                  <a class="catalog-item__cart-link" href="#">
+                  <a class="catalog-item__cart-link js-modal" href="#">
                     <svg class="catalog-item__icon" width="21" height="18">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -196,7 +174,7 @@
 
                 <footer class="catalog-item__footer">
                   <span class="catalog-item__price">1 500 руб.</span>
-                  <a class="catalog-item__cart-link" href="#">
+                  <a class="catalog-item__cart-link js-modal" href="#">
                     <svg class="catalog-item__icon" width="21" height="18">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -252,7 +230,7 @@
           <div class="page-footer__logo-wrapper">
             <a class="page-footer__logo" href="#">
               <svg class="page-footer__icon" width="102" height="34">
-                <use xlink:href="img/sprite.svg#footer-logo"></use>
+                <use xlink:href="img/sprite.svg#logo-footer"></use>
               </svg>
             </a>
           </div>
@@ -263,7 +241,7 @@
                 <span class="visually-hidden">Instagram</span>
 
                 <svg class="socials__icon" width="22" height="21">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -273,7 +251,7 @@
                 <span class="visually-hidden">Facebook</span>
 
                 <svg class="socials__icon" width="15" height="29">
-                  <use xlink:href="img/sprite.svg#fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -283,7 +261,7 @@
                 <span class="visually-hidden">Twitter</span>
 
                 <svg class="socials__icon" width="24" height="20">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -295,7 +273,7 @@
               <span class="copyright__text">Разработано</span>
 
               <svg class="copyright__icon" width="27" height="34">
-                <use xlink:href="img/sprite.svg#academy"></use>
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
           </div>
@@ -305,36 +283,50 @@
 
     <!-- Модальное окно -->
     <section class="modal-cart modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
+        <div class="modal__fade"></div>
 
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="modal__form-group">
-          <legend class="modal__legend">Выберите размер</legend>
+        <div class="modal__box">
+          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
 
-          <label class="modal__label">
-            S
+          <form class="modal__form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="modal__form-group">
+              <legend class="modal__legend">Выберите размер:</legend>
 
-            <input class="modal__input" type="radio" name="size" value="S">
-          </label>
+              <div class="modal__inner">
 
+                <div class="modal__size-box">
+                  <input class="modal__input" type="radio" name="size" value="S" id="s" checked>
 
-          <label class="modal__label">
-            M
+                  <label class="modal__label" for="s">
+                    S
+                  </label>
+                </div>
 
-            <input class="modal__input" type="radio" name="size" value="M">
-          </label>
+                <div class="modal__size-box">
+                  <input class="modal__input" type="radio" name="size" value="M" id="m">
 
+                  <label class="modal__label" for="m">
+                    M
+                  </label>
+                </div>
 
-          <label class="modal__label">
-            L
+                <div class="modal__size-box">
+                  <input class="modal__input" type="radio" name="size" value="L" id="l">
 
-            <input class="modal__input" type="radio" name="size" value="L">
-          </label>
+                  <label class="modal__label" for="l">
+                    L
+                  </label>
+                </div>
+              </div>
+            </fieldset>
 
-        </fieldset>
-
-        <button class="modal__submit button">Добавить</button>
-      </form>
-    </section>
+            <button class="modal__submit button">Добавить</button>
+          </form>
+        </div>
+      </section>
+    <script src="js/app.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

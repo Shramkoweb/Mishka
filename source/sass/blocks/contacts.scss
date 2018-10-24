@@ -57,6 +57,14 @@
   }
 }
 
+.contacts__map {
+  height: 457px;
+
+  @media (min-width: $bp-desktop) {
+    width: 525px;
+  }
+}
+
 .contacts__map-wrapper {
   margin-bottom: 42px;
 
