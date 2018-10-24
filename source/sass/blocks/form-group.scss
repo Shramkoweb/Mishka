@@ -325,6 +325,10 @@
     &:active + .form-group__label--radio::before {
       border-color: rgba(68, 68, 68, 0.3);
     }
+
+    &:focus + .form-group__label--radio::before {
+      border-color: #62d1ba;
+    }
   }
 
   &--checkbox {
@@ -346,6 +350,10 @@
 
     &:active + .form-group__label--checkbox::before {
       border-color: rgba(68, 68, 68, 0.3);
+    }
+
+    &:focus + .form-group__label--checkbox::before {
+      border-color: #62d1ba;
     }
   }
 
