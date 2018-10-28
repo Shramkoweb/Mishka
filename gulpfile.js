@@ -12,6 +12,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var del = require("del");
+var ghPages = require("gulp-gh-pages");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -108,6 +109,11 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("deploy", function () {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
+
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("build"));
@@ -118,7 +124,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html"
+  "html",
+  "deploy"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
