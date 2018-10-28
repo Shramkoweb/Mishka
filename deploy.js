@@ -1,6 +1,3 @@
-var ghpages = require('gh-pages'),
-       path = require('path');
+var ghpages = require('gh-pages');
 
-gulp.task('deploy', function(cb) {
-  ghpages.publish(path.join(process.cwd(), 'dist'), cb);
-});
+ghpages.publish('build', function(err) {});
