@@ -57,7 +57,7 @@ gulp.task("images", function () {
     ], {
         verbose: true
       }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 
 });
 
@@ -69,7 +69,7 @@ gulp.task("webp", function () {
     "source/img/map*.jpg"
   ])
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
@@ -109,14 +109,14 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("deploy", function () {
-  return gulp.src('./build/**/*')
-    .pipe(ghPages());
-});
-
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("deploy", function () {
+  return gulp.src("build/**/*")
+    .pipe(ghPages());
 });
 
 gulp.task("build", gulp.series(
