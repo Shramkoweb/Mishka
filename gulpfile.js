@@ -12,7 +12,6 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var del = require("del");
-var ghPages = require("gulp-gh-pages");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -114,18 +113,12 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("deploy", function () {
-  return gulp.src("./build/**/*")
-    .pipe(ghPages());
-});
-
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
   "sprite",
-  "html",
-  "deploy"
+  "html"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
