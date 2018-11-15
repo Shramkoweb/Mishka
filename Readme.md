@@ -1,6 +1,6 @@
 # Ссылка на готовый [сайт](https://shramkoweb.github.io/852139-mishka/) «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Sergey Shramko](https://github.com/Shramkoweb).
+* Студент: [Sergey Shramko](https://htmlacademy.ru/profile/id852139).
 * Наставник: [Юлия Бухвалова](https://github.com/yoksel).
 ---
 
