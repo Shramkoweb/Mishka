@@ -1,4 +1,5 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Ссылка на готовый [сайт](https://shramkoweb.github.io/852139-mishka/)
+## Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergey Shramko](https://up.htmlacademy.ru/adaptive/15/user/852139).
 * Наставник: [Юлия Бухвалова](https://up.htmlacademy.ru/adaptive/15/user/114660).
